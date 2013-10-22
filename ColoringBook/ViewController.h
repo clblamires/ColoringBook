@@ -10,7 +10,10 @@
 // Testing!
 
 #import <UIKit/UIKit.h>
+#import "drawingDefaults.h"
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *drawnLayer;
+@property (weak, nonatomic) IBOutlet UIImageView *drawingLayer;
 
 @end

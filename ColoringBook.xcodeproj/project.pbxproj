@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3663902D181725A2002CECCA /* drawingDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drawingDefaults.h; sourceTree = "<group>"; };
 		366717ED18161E7D00B3D443 /* ColoringBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoringBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366717F018161E7D00B3D443 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		366717F218161E7D00B3D443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +89,7 @@
 				3667180818161E7D00B3D443 /* MainStoryboard.storyboard */,
 				3667180B18161E7D00B3D443 /* ViewController.h */,
 				3667180C18161E7D00B3D443 /* ViewController.m */,
+				3663902D181725A2002CECCA /* drawingDefaults.h */,
 				366717F718161E7D00B3D443 /* Supporting Files */,
 			);
 			path = ColoringBook;
