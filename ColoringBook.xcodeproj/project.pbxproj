@@ -300,6 +300,7 @@
 				3667181218161E7D00B3D443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
