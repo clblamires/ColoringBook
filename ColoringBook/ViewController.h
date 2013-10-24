@@ -15,5 +15,6 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *drawnLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *drawingLayer;
+- (IBAction)colorPressed:(id)sender;
 
 @end
