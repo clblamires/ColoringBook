@@ -34,88 +34,55 @@
 
 
 /* DRAWING FUNCTIONS */
+
+
 // touchesBegan - capture touches on the screen
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    
-    /*CGFloat opac = drand48();
-     NSLog(@"%f",opac);
-     opacity = opac;*/ // this was generating random opacity. not really very useful though
-    
-    /////////////mouseSwiped = NO;
+    mouseSwiped = NO;
     UITouch * touch = [touches anyObject]; // touch all the objects!
     lastPoint = [touch locationInView:self.view];
-    // touch *all* the objects? :(
 }
+
+
+
 
 // touchesMoved - captures touch MOVEMENT on the screen
 // it's so moving!
 - (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    /////////////mouseSwiped = YES; // because we're moving now!
+    mouseSwiped = YES; // because we're moving now!
     UITouch * touch = [touches anyObject];
     CGPoint currentPoint = [touch locationInView:self.view];
-    
-    
-    
-    
-    
     UIGraphicsBeginImageContext(self.view.frame.size);
     [self.drawingLayer.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
     CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), currentPoint.x, currentPoint.y);
     CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
-    // here!
-    
-    
-    /*if ( !eraserSelected )
-    {
-        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), brushSize );
-    }
-    else
-    {
-        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), eraserSize );
-    }*/
-    
-    CGContextSetLineWidth(UIGraphicsGetCurrentContext(), brushSize );
-    
-    
-    
+    CGContextSetLineWidth(UIGraphicsGetCurrentContext(), brushSize ); // draw!
     CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), red, green, blue, 1.0);
     CGContextSetBlendMode(UIGraphicsGetCurrentContext(),kCGBlendModeNormal);
-    
     CGContextStrokePath(UIGraphicsGetCurrentContext());
     self.drawingLayer.image = UIGraphicsGetImageFromCurrentImageContext();
     [self.drawingLayer setAlpha:opacity];
     UIGraphicsEndImageContext();
-    
     lastPoint = currentPoint;
 }
 
+
+
+
+
+
 // touchesEnded - and we're all done drawing! finish 'er off!
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-    
-    
-    
-    
+    // check to see if the user actually swiped across the screen
+    // if not, then just draw a single point
     if(!mouseSwiped) {
         UIGraphicsBeginImageContext(self.view.frame.size);
         [self.drawingLayer.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
-        // here!
-        /*if ( !eraserSelected )
-        {
-            CGContextSetLineWidth(UIGraphicsGetCurrentContext(), brushSize);
-        }
-        else
-        {
-            CGContextSetLineWidth(UIGraphicsGetCurrentContext(), eraserSize);
-        }*/ //-- this is code for the eraser, since the eraser was a larger size than the rest of the brushes
         CGContextSetLineWidth(UIGraphicsGetCurrentContext(), brushSize);
-        
-        
-        
-        
         CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), red, green, blue, opacity);
         CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
@@ -125,6 +92,7 @@
         UIGraphicsEndImageContext();
     }
     
+    // This is what actually draws to the screen! YAY!
     UIGraphicsBeginImageContext(self.drawnLayer.frame.size);
     [self.drawnLayer.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) blendMode:kCGBlendModeNormal alpha:1.0];
     [self.drawingLayer.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) blendMode:kCGBlendModeNormal alpha:opacity];
@@ -132,5 +100,9 @@
     self.drawingLayer.image = nil; // erase the drawing layer, since the line is now officially "drawn"
     UIGraphicsEndImageContext();
 }
+
+
+
+
 
 @end
