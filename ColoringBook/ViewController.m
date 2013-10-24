@@ -105,6 +105,62 @@
 
 
 
+
+
 - (IBAction)colorPressed:(id)sender {
+    // get the button pressed, then get its tag, and finally set the color based on the tag
+    UIButton * color = (UIButton *) sender;
+    
+    if (color.tag == 0) {
+        setColor(28, 28, 28);
+    }
+    else if (color.tag == 1) {
+        setColor(29,96,203);
+    }
+    else if (color.tag == 2) {
+        setColor(180, 103, 77);
+    }
+    else if (color.tag == 3) {
+        setColor(149, 145, 140);
+    }
+    else if (color.tag == 4) {
+        setColor(128, 218, 235);
+    }
+    else if (color.tag == 5) {
+        setColor(117, 255, 122);
+    }
+    else if (color.tag == 6) {
+        setColor(116, 10, 10);
+    }
+    else if (color.tag == 7) {
+        setColor(238, 132, 29);
+    }
+    else if (color.tag == 8) {
+        setColor(252, 116, 253);
+    }
+    else if (color.tag == 9) {
+        setColor(143, 80, 157);
+    }
+    else if (color.tag == 10) {
+        setColor(238, 32, 32);
+    }
+    else if (color.tag == 11) {
+        setColor(250, 167, 108);
+    }
+    else if (color.tag == 12) {
+        setColor(255, 255, 255);
+    }
+    else if (color.tag == 13) {
+        setColor(252, 232, 131);
+    }
+    else if (color.tag == 14) {
+        setColor(197, 227, 132);
+    }
+    else if (color.tag == 15) {
+        setColor(28, 172, 120);
+    }
+    
+    NSLog(@"Color has been set!");
+    
 }
 @end

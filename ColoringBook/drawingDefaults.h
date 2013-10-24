@@ -19,4 +19,12 @@ CGFloat opacity     = 1.0;    // brush width
 
 BOOL mouseSwiped;   // identify if the brush stroke is continuous
 
+
+void setColor ( int r, int g, int b )
+{
+    red = r/255.0;
+    green = g/255.0;
+    blue = b/255.0;
+}
+
 #endif
