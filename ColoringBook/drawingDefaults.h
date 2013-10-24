@@ -17,14 +17,23 @@ CGFloat blue        = 24/255.0;
 CGFloat brushSize   = 25;      // brush stroke
 CGFloat opacity     = 1.0;    // brush width
 
+const float MAX_COLOR_VALUE = 255.0;
+
 BOOL mouseSwiped;   // identify if the brush stroke is continuous
 
 
+
+// setColor
+// sets the CGFloat rgb values
+// params - integer values for red, green, and blue
 void setColor ( int r, int g, int b )
 {
-    red = r/255.0;
-    green = g/255.0;
-    blue = b/255.0;
+    if ( r >= 0 && r <= 255 )
+        red = r/MAX_COLOR_VALUE;
+    if ( g >= 0 && g <= 255 )
+        green = g/MAX_COLOR_VALUE;
+    if ( b >= 0 && b <= 255 )
+        blue = b/MAX_COLOR_VALUE;
 }
 
 #endif
