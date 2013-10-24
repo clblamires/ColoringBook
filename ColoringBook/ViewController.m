@@ -160,7 +160,10 @@
         setColor(28, 172, 120);
     }
     
-    NSLog(@"Color has been set!");
-    
+    //NSLog(@"Color has been set!");
+    // this above line is commented out because we no longer need it to tell us every dang time the button is pushed!
+}
+
+- (IBAction)eraserPressed:(id)sender {
 }
 @end

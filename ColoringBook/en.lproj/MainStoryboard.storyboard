@@ -187,6 +187,16 @@
                                     <action selector="colorPressed:" destination="2" eventType="touchUpInside" id="Neq-gI-DI8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyv-0j-oUZ">
+                                <rect key="frame" x="-4" y="961" width="63" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Eraser copy.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="eraserPressed:" destination="2" eventType="touchUpInside" id="ifH-F8-8Fh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -211,6 +221,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Eraser copy.png" width="128" height="128"/>
         <image name="_black.png" width="128" height="128"/>
         <image name="_blue.png" width="128" height="128"/>
         <image name="_brown.png" width="128" height="128"/>

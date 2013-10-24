@@ -9,15 +9,23 @@
 #ifndef ColoringBook_drawingDefaults_h
 #define ColoringBook_drawingDefaults_h
 
+
+
+// the maximum value a color can have is 255, and the minimum is 0
+// so no rgb color should fall outside this range
+const float MAX_COLOR_VALUE = 255.0;
+const float MIN_COLOR_VALUE = 0;
+
 CGPoint lastPoint;  // store the last point drawn on the canvas
 
-CGFloat red         = 24/255.0;        // this and below are for RGB values
-CGFloat green       = 24/255.0;
-CGFloat blue        = 24/255.0;
-CGFloat brushSize   = 25;      // brush stroke
-CGFloat opacity     = 1.0;    // brush width
+CGFloat red         = 24/MAX_COLOR_VALUE;           // this and below are for RGB values
+CGFloat green       = 24/MAX_COLOR_VALUE;
+CGFloat blue        = 24/MAX_COLOR_VALUE;
 
-const float MAX_COLOR_VALUE = 255.0;
+CGFloat brushSize   = 25;                           // default brush stroke
+CGFloat opacity     = 1.0;                          // default brush opacity
+
+
 
 BOOL mouseSwiped;   // identify if the brush stroke is continuous
 
@@ -28,12 +36,20 @@ BOOL mouseSwiped;   // identify if the brush stroke is continuous
 // params - integer values for red, green, and blue
 void setColor ( int r, int g, int b )
 {
-    if ( r >= 0 && r <= 255 )
+    if ( r >= MIN_COLOR_VALUE && r <= MAX_COLOR_VALUE )
         red = r/MAX_COLOR_VALUE;
-    if ( g >= 0 && g <= 255 )
+    
+    
+    if ( g >= MIN_COLOR_VALUE && g <= MAX_COLOR_VALUE )
         green = g/MAX_COLOR_VALUE;
-    if ( b >= 0 && b <= 255 )
+    
+    
+    if ( b >= MIN_COLOR_VALUE && b <= MAX_COLOR_VALUE )
         blue = b/MAX_COLOR_VALUE;
-}
+    
+    
+} //-- end of setColor function
+
+
 
 #endif
