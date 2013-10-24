@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360104681819B34C001C38DE /* page-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 360104661819B34C001C38DE /* page-template.png */; };
 		366717F118161E7D00B3D443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366717F018161E7D00B3D443 /* UIKit.framework */; };
 		366717F318161E7D00B3D443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366717F218161E7D00B3D443 /* Foundation.framework */; };
 		366717F518161E7D00B3D443 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366717F418161E7D00B3D443 /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		360104661819B34C001C38DE /* page-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page-template.png"; sourceTree = "<group>"; };
 		3663902D181725A2002CECCA /* drawingDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drawingDefaults.h; sourceTree = "<group>"; };
 		366717ED18161E7D00B3D443 /* ColoringBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoringBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366717F018161E7D00B3D443 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360104641819B34C001C38DE /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				360104661819B34C001C38DE /* page-template.png */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
 		366717E418161E7D00B3D443 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		366717F618161E7D00B3D443 /* ColoringBook */ = {
 			isa = PBXGroup;
 			children = (
+				360104641819B34C001C38DE /* gui */,
 				366717FF18161E7D00B3D443 /* AppDelegate.h */,
 				3667180018161E7D00B3D443 /* AppDelegate.m */,
 				3667180818161E7D00B3D443 /* MainStoryboard.storyboard */,
@@ -162,6 +173,7 @@
 			files = (
 				366717FB18161E7D00B3D443 /* InfoPlist.strings in Resources */,
 				3667180318161E7D00B3D443 /* Default.png in Resources */,
+				360104681819B34C001C38DE /* page-template.png in Resources */,
 				3667180518161E7D00B3D443 /* Default@2x.png in Resources */,
 				3667180718161E7D00B3D443 /* Default-568h@2x.png in Resources */,
 				3667180A18161E7D00B3D443 /* MainStoryboard.storyboard in Resources */,
