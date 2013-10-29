@@ -12,10 +12,16 @@
 #import <UIKit/UIKit.h>
 #import "drawingDefaults.h"
 
-@interface ViewController : UIViewController
+#import "SettingsViewController.h"
+
+@interface ViewController : UIViewController <SettingsViewControllerDelegate> 
+    
 @property (weak, nonatomic) IBOutlet UIImageView *drawnLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *drawingLayer;
 - (IBAction)colorPressed:(id)sender;
 - (IBAction)eraserPressed:(id)sender;
+- (IBAction)settingsButton:(id)sender;
+    
+
 
 @end

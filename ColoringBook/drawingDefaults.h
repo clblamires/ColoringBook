@@ -16,21 +16,32 @@
 const float MAX_COLOR_VALUE = 255.0;
 const float MIN_COLOR_VALUE = 0;
 
-CGPoint lastPoint;  // store the last point drawn on the canvas
 
-CGFloat red         = 24/MAX_COLOR_VALUE;           // this and below are for RGB values
-CGFloat green       = 24/MAX_COLOR_VALUE;
-CGFloat blue        = 24/MAX_COLOR_VALUE;
+// drawing controls
+CGPoint lastPoint;                  // store the last point drawn on the canvas
+BOOL mouseSwiped;                   // identify if the brush stroke is continuous
+BOOL eraserIsActive = NO;           // whether the eraser is being used
+BOOL stopDrawing = NO;
 
-CGFloat brushSize   = 25;                           // default brush stroke
-CGFloat opacity     = 1.0;                          // default brush opacity
+// brush and eraser settings
+
+CGFloat red             = 24/MAX_COLOR_VALUE;           // this and below are for RGB values
+CGFloat green           = 24/MAX_COLOR_VALUE;
+CGFloat blue            = 24/MAX_COLOR_VALUE;
+
+CGFloat brushSize       = 25;                           // default brush stroke
+CGFloat eraserSize      = 40;                           // default eraser stroke
+CGFloat opacity         = 1.0;                          // default brush opacity
+CGFloat opacityBackup   = 1.0;
 
 
 
-BOOL mouseSwiped;   // identify if the brush stroke is continuous
 
 
 
+
+
+// C-style function
 // setColor
 // sets the CGFloat rgb values
 // params - integer values for red, green, and blue

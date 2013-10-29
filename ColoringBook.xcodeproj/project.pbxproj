@@ -19,6 +19,7 @@
 		3667180718161E7D00B3D443 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3667180618161E7D00B3D443 /* Default-568h@2x.png */; };
 		3667180A18161E7D00B3D443 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3667180818161E7D00B3D443 /* MainStoryboard.storyboard */; };
 		3667180D18161E7D00B3D443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3667180C18161E7D00B3D443 /* ViewController.m */; };
+		36D0C5F2181B0D4900AE12DB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D0C5F1181B0D4900AE12DB /* SettingsViewController.m */; };
 		36DCA2C11819CAF700BDED69 /* _black.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DCA2B11819CAF700BDED69 /* _black.png */; };
 		36DCA2C21819CAF700BDED69 /* _blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DCA2B21819CAF700BDED69 /* _blue.png */; };
 		36DCA2C31819CAF700BDED69 /* _brown.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DCA2B31819CAF700BDED69 /* _brown.png */; };
@@ -57,6 +58,8 @@
 		3667180918161E7D00B3D443 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3667180B18161E7D00B3D443 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3667180C18161E7D00B3D443 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36D0C5F0181B0D4900AE12DB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		36D0C5F1181B0D4900AE12DB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		36DCA2B11819CAF700BDED69 /* _black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _black.png; sourceTree = "<group>"; };
 		36DCA2B21819CAF700BDED69 /* _blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _blue.png; sourceTree = "<group>"; };
 		36DCA2B31819CAF700BDED69 /* _brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _brown.png; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				3667180C18161E7D00B3D443 /* ViewController.m */,
 				3663902D181725A2002CECCA /* drawingDefaults.h */,
 				366717F718161E7D00B3D443 /* Supporting Files */,
+				36D0C5F0181B0D4900AE12DB /* SettingsViewController.h */,
+				36D0C5F1181B0D4900AE12DB /* SettingsViewController.m */,
 			);
 			path = ColoringBook;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				366717FD18161E7D00B3D443 /* main.m in Sources */,
 				3667180118161E7D00B3D443 /* AppDelegate.m in Sources */,
 				3667180D18161E7D00B3D443 /* ViewController.m in Sources */,
+				36D0C5F2181B0D4900AE12DB /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
