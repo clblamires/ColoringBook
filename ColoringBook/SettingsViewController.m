@@ -77,7 +77,6 @@
         CGContextStrokePath(UIGraphicsGetCurrentContext());
         self.brushPreview.image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
-        NSLog(@"Slider was changed");
     }
     
     else if(changedSlider == self.opacityControl) {

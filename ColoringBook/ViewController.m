@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "drawingDefaults.h"
 #import "SettingsViewController.h"
+#import "soundEffects.h"
 #import <AVFoundation/AVFoundation.h>
 
 
@@ -20,6 +21,7 @@
 @implementation ViewController
 
 AVAudioPlayer * player;
+AVAudioPlayer * backgroundMusic;
 
 
 
@@ -34,6 +36,25 @@ AVAudioPlayer * player;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    //play the music here...?
+    
+    NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
+    resourcePath = [resourcePath stringByAppendingString:bgMusic];
+    NSLog(bgMusic);
+    NSError * err;
+    backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:resourcePath] error:&err];
+    if ( err )
+    {
+        NSLog(@"Music failure");
+    }
+    else{
+        backgroundMusic.delegate = self;
+        backgroundMusic.numberOfLoops = -1;
+        backgroundMusic.volume = 0.1;
+        [backgroundMusic play];
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -174,7 +195,9 @@ AVAudioPlayer * player;
 
 
 
+/*
 
+ */
 
 - (IBAction)colorPressed:(id)sender {
     // get the button pressed, then get its tag, and finally set the color based on the tag
@@ -198,67 +221,67 @@ AVAudioPlayer * player;
     
     if (color.tag == 0) {
         setColor(28, 28, 28);
-        resourcePath = [resourcePath stringByAppendingString:@"/Black.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxBlack];
     }
     else if (color.tag == 1) {
         setColor(29,96,203);
-        resourcePath = [resourcePath stringByAppendingString:@"/Blue.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxBlue];
     }
     else if (color.tag == 2) {
         setColor(180, 103, 77);
-        resourcePath = [resourcePath stringByAppendingString:@"/Brown.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxBrown];
     }
     else if (color.tag == 3) {
         setColor(149, 145, 140);
-        resourcePath = [resourcePath stringByAppendingString:@"/Grey.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxGrey];
     }
     else if (color.tag == 4) {
         setColor(128, 218, 235);
-        resourcePath = [resourcePath stringByAppendingString:@"/Light Blue.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxLightBlue];
     }
     else if (color.tag == 5) {
         setColor(117, 255, 122);
-        resourcePath = [resourcePath stringByAppendingString:@"/Light Green.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxLightGreen];
     }
     else if (color.tag == 6) {
         setColor(116, 10, 10);
-        resourcePath = [resourcePath stringByAppendingString:@"/Maroon.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxMaroon];
     }
     else if (color.tag == 7) {
         setColor(238, 132, 29);
-        resourcePath = [resourcePath stringByAppendingString:@"/Orange.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxOrange];
     }
     else if (color.tag == 8) {
         setColor(252, 116, 253);
-        resourcePath = [resourcePath stringByAppendingString:@"/Pink.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxPink];
     }
     else if (color.tag == 9) {
         setColor(143, 80, 157);
-        resourcePath = [resourcePath stringByAppendingString:@"/Purple.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxPurple];
     }
     else if (color.tag == 10) {
         setColor(238, 32, 32);
-        resourcePath = [resourcePath stringByAppendingString:@"/Red.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxRed];
     }
     else if (color.tag == 11) {
         setColor(200, 168, 146); // NOTE TO SELF: Casey you changed this color, be sure to update the actual color button too!
-        resourcePath = [resourcePath stringByAppendingString:@"/Tan.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxTan];
     }
     else if (color.tag == 12) {
         setColor(255, 255, 255);
-        resourcePath = [resourcePath stringByAppendingString:@"/White.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxWhite];
     }
     else if (color.tag == 13) {
         setColor(252, 232, 131);
-        resourcePath = [resourcePath stringByAppendingString:@"/Yellow.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxYellow];
     }
     else if (color.tag == 14) {
         setColor(197, 227, 132);
-        resourcePath = [resourcePath stringByAppendingString:@"/Yellow Green.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxYellowGreen];
     }
     else if (color.tag == 15) {
         setColor(28, 172, 120);
-        resourcePath = [resourcePath stringByAppendingString:@"/Green.wav"];
+        resourcePath = [resourcePath stringByAppendingString:sfxGreen];
     }
     
     //NSLog(@"Color has been set!");

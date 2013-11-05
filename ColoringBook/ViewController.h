@@ -10,7 +10,6 @@
 // Testing!
 
 #import <UIKit/UIKit.h>
-#import "drawingDefaults.h"
 
 #import "SettingsViewController.h"
 

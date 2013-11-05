@@ -79,6 +79,7 @@
 		363D8DE11829A2B000DE047C /* Yellow Green.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Yellow Green.wav"; path = "sounds demo/Yellow Green.wav"; sourceTree = SOURCE_ROOT; };
 		363D8DE21829A2B000DE047C /* Yellow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Yellow.wav; path = "sounds demo/Yellow.wav"; sourceTree = SOURCE_ROOT; };
 		363D8DF21829AB7700DE047C /* Ambler.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Ambler.wav; path = ../../../../../Downloads/Ambler.wav; sourceTree = "<group>"; };
+		363D8DF51829AF4D00DE047C /* soundEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soundEffects.h; sourceTree = "<group>"; };
 		3663902D181725A2002CECCA /* drawingDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drawingDefaults.h; sourceTree = "<group>"; };
 		366717ED18161E7D00B3D443 /* ColoringBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoringBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366717F018161E7D00B3D443 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -225,6 +226,7 @@
 				366717F718161E7D00B3D443 /* Supporting Files */,
 				36D0C5F0181B0D4900AE12DB /* SettingsViewController.h */,
 				36D0C5F1181B0D4900AE12DB /* SettingsViewController.m */,
+				363D8DF51829AF4D00DE047C /* soundEffects.h */,
 			);
 			path = ColoringBook;
 			sourceTree = "<group>";
