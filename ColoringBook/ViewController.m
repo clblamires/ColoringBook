@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "drawingDefaults.h"
 #import "SettingsViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 
 
@@ -17,6 +18,17 @@
 @end
 
 @implementation ViewController
+
+AVAudioPlayer * player;
+
+
+
+
+/*
+ "Ambler" Kevin MacLeod (incompetech.com)
+ Licensed under Creative Commons: By Attribution 3.0
+ http://creativecommons.org/licenses/by/3.0/
+ */
 
 - (void)viewDidLoad
 {
@@ -67,8 +79,6 @@
 {
     if ( !stopDrawing ) { // only do this if we aren't stopped
         // stopping would be at the settings screen, or other screens
-        
-        
         mouseSwiped = NO;
         UITouch * touch = [touches anyObject]; // touch all the objects!
         lastPoint = [touch locationInView:self.view];
@@ -170,62 +180,105 @@
     // get the button pressed, then get its tag, and finally set the color based on the tag
     
     // first, turn "off" the eraser
-    eraserIsActive = NO;
-    opacity = opacityBackup;
+    
+    if ( eraserIsActive )
+    {
+        eraserIsActive = NO;
+        opacity = opacityBackup;
+    }
+    
+    //eraserIsActive = NO;
+    //opacity = opacityBackup;
+    
+    // set the path to the sound effects
+    NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
+    // each button will have a sound effect for it, as seen below
     
     UIButton * color = (UIButton *) sender;
     
     if (color.tag == 0) {
         setColor(28, 28, 28);
+        resourcePath = [resourcePath stringByAppendingString:@"/Black.wav"];
     }
     else if (color.tag == 1) {
         setColor(29,96,203);
+        resourcePath = [resourcePath stringByAppendingString:@"/Blue.wav"];
     }
     else if (color.tag == 2) {
         setColor(180, 103, 77);
+        resourcePath = [resourcePath stringByAppendingString:@"/Brown.wav"];
     }
     else if (color.tag == 3) {
         setColor(149, 145, 140);
+        resourcePath = [resourcePath stringByAppendingString:@"/Grey.wav"];
     }
     else if (color.tag == 4) {
         setColor(128, 218, 235);
+        resourcePath = [resourcePath stringByAppendingString:@"/Light Blue.wav"];
     }
     else if (color.tag == 5) {
         setColor(117, 255, 122);
+        resourcePath = [resourcePath stringByAppendingString:@"/Light Green.wav"];
     }
     else if (color.tag == 6) {
         setColor(116, 10, 10);
+        resourcePath = [resourcePath stringByAppendingString:@"/Maroon.wav"];
     }
     else if (color.tag == 7) {
         setColor(238, 132, 29);
+        resourcePath = [resourcePath stringByAppendingString:@"/Orange.wav"];
     }
     else if (color.tag == 8) {
         setColor(252, 116, 253);
+        resourcePath = [resourcePath stringByAppendingString:@"/Pink.wav"];
     }
     else if (color.tag == 9) {
         setColor(143, 80, 157);
+        resourcePath = [resourcePath stringByAppendingString:@"/Purple.wav"];
     }
     else if (color.tag == 10) {
         setColor(238, 32, 32);
+        resourcePath = [resourcePath stringByAppendingString:@"/Red.wav"];
     }
     else if (color.tag == 11) {
-        setColor(250, 167, 108);
+        setColor(200, 168, 146); // NOTE TO SELF: Casey you changed this color, be sure to update the actual color button too!
+        resourcePath = [resourcePath stringByAppendingString:@"/Tan.wav"];
     }
     else if (color.tag == 12) {
         setColor(255, 255, 255);
+        resourcePath = [resourcePath stringByAppendingString:@"/White.wav"];
     }
     else if (color.tag == 13) {
         setColor(252, 232, 131);
+        resourcePath = [resourcePath stringByAppendingString:@"/Yellow.wav"];
     }
     else if (color.tag == 14) {
         setColor(197, 227, 132);
+        resourcePath = [resourcePath stringByAppendingString:@"/Yellow Green.wav"];
     }
     else if (color.tag == 15) {
         setColor(28, 172, 120);
+        resourcePath = [resourcePath stringByAppendingString:@"/Green.wav"];
     }
     
     //NSLog(@"Color has been set!");
     // this above line is commented out because we no longer need it to tell us every dang time the button is pushed!
+    
+    
+    
+    // sound playing!
+    NSError * err;
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:resourcePath] error:&err];
+    if ( err )
+    {
+        NSLog(@"Music failure");
+    }
+    else{
+        player.delegate = self;
+        [player play];
+    }
+    
+    
 }
 
 - (IBAction)eraserPressed:(id)sender {
@@ -236,6 +289,7 @@
     setColor(255,255,255);
     opacityBackup = opacity;
     opacity = 1.0;
+    // add a noise for the eraser
 }
 
 - (IBAction)settingsButton:(id)sender {

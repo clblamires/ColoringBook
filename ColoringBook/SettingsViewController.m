@@ -83,7 +83,8 @@
     else if(changedSlider == self.opacityControl) {
         
         self.opacity = self.opacityControl.value;
-        self.opacityValueLabel.text = [NSString stringWithFormat:@"Opacity: %.0f %%", round(self.opacity)*100];
+        self.opacityValueLabel.text = [NSString stringWithFormat:@"Opacity: %.0f %%", round(self.opacity*100)];
+        
         
         UIGraphicsBeginImageContext(self.brushPreview.frame.size);
         CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
