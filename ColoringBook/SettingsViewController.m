@@ -42,7 +42,7 @@
     
     self.brushControl.value = self.brush;
     self.opacityControl.value = self.opacity;
-    NSLog(@"%.3f",self.opacity);
+    //NSLog(@"%.3f",self.opacity);
     [self sliderChanged:self.brushControl];
     [self sliderChanged:self.opacityControl];
 }
@@ -94,7 +94,7 @@
         CGContextStrokePath(UIGraphicsGetCurrentContext());
         self.brushPreview.image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
-        NSLog(@"Opacity Slider was changed");
+        //NSLog(@"Opacity Slider was changed");
     }
     
 }

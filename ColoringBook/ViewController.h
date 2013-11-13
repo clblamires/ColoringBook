@@ -13,13 +13,26 @@
 
 #import "SettingsViewController.h"
 
-@interface ViewController : UIViewController <SettingsViewControllerDelegate> 
+@interface ViewController : UIViewController <SettingsViewControllerDelegate> {
+    IBOutlet UIImageView *imagepost;
+}
     
 @property (weak, nonatomic) IBOutlet UIImageView *drawnLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *drawingLayer;
+@property (weak, nonatomic) IBOutlet UIImageView *shareLayer;
+@property (weak, nonatomic) IBOutlet UIImageView *coloringBookPage;
+
+
+
+//@property (strong, nonatomic) UIImageView *postImage;
+@property (strong, nonatomic) UILabel *postText;
+
+
 - (IBAction)colorPressed:(id)sender;
 - (IBAction)eraserPressed:(id)sender;
 - (IBAction)settingsButton:(id)sender;
+- (IBAction)sharePressed:(id)sender;
+- (IBAction)clearAllButton:(id)sender;
     
 
 

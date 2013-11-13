@@ -27,6 +27,9 @@
 		363D8DF01829A2B000DE047C /* Yellow Green.wav in Resources */ = {isa = PBXBuildFile; fileRef = 363D8DE11829A2B000DE047C /* Yellow Green.wav */; };
 		363D8DF11829A2B000DE047C /* Yellow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 363D8DE21829A2B000DE047C /* Yellow.wav */; };
 		363D8DF31829AB7700DE047C /* Ambler.wav in Resources */ = {isa = PBXBuildFile; fileRef = 363D8DF21829AB7700DE047C /* Ambler.wav */; };
+		365379F71832EAF000F8FD92 /* Shareing.png in Resources */ = {isa = PBXBuildFile; fileRef = 365379F61832EAF000F8FD92 /* Shareing.png */; };
+		365379FA1832FE3B00F8FD92 /* paletteBacking.png in Resources */ = {isa = PBXBuildFile; fileRef = 365379F81832FE3B00F8FD92 /* paletteBacking.png */; };
+		365379FB1832FE3B00F8FD92 /* settingsBacking.png in Resources */ = {isa = PBXBuildFile; fileRef = 365379F91832FE3B00F8FD92 /* settingsBacking.png */; };
 		366717F118161E7D00B3D443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366717F018161E7D00B3D443 /* UIKit.framework */; };
 		366717F318161E7D00B3D443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366717F218161E7D00B3D443 /* Foundation.framework */; };
 		366717F518161E7D00B3D443 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366717F418161E7D00B3D443 /* CoreGraphics.framework */; };
@@ -38,6 +41,9 @@
 		3667180718161E7D00B3D443 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3667180618161E7D00B3D443 /* Default-568h@2x.png */; };
 		3667180A18161E7D00B3D443 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3667180818161E7D00B3D443 /* MainStoryboard.storyboard */; };
 		3667180D18161E7D00B3D443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3667180C18161E7D00B3D443 /* ViewController.m */; };
+		368781A9182C54F90093108E /* Bunney.png in Resources */ = {isa = PBXBuildFile; fileRef = 368781A8182C54F90093108E /* Bunney.png */; };
+		36B8FC651832CC5B00DA9A5D /* clearall.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B8FC641832CC5B00DA9A5D /* clearall.png */; };
+		36B8FC671832CC6500DA9A5D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B8FC661832CC6500DA9A5D /* settings.png */; };
 		36D0C5F2181B0D4900AE12DB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D0C5F1181B0D4900AE12DB /* SettingsViewController.m */; };
 		36DCA2C11819CAF700BDED69 /* _black.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DCA2B11819CAF700BDED69 /* _black.png */; };
 		36DCA2C21819CAF700BDED69 /* _blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DCA2B21819CAF700BDED69 /* _blue.png */; };
@@ -80,6 +86,9 @@
 		363D8DE21829A2B000DE047C /* Yellow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Yellow.wav; path = "sounds demo/Yellow.wav"; sourceTree = SOURCE_ROOT; };
 		363D8DF21829AB7700DE047C /* Ambler.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Ambler.wav; path = ../../../../../Downloads/Ambler.wav; sourceTree = "<group>"; };
 		363D8DF51829AF4D00DE047C /* soundEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soundEffects.h; sourceTree = "<group>"; };
+		365379F61832EAF000F8FD92 /* Shareing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shareing.png; sourceTree = "<group>"; };
+		365379F81832FE3B00F8FD92 /* paletteBacking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paletteBacking.png; path = ColoringBook/soundeffects/paletteBacking.png; sourceTree = SOURCE_ROOT; };
+		365379F91832FE3B00F8FD92 /* settingsBacking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsBacking.png; path = ColoringBook/soundeffects/settingsBacking.png; sourceTree = SOURCE_ROOT; };
 		3663902D181725A2002CECCA /* drawingDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drawingDefaults.h; sourceTree = "<group>"; };
 		366717ED18161E7D00B3D443 /* ColoringBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColoringBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366717F018161E7D00B3D443 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -97,6 +106,9 @@
 		3667180918161E7D00B3D443 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3667180B18161E7D00B3D443 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3667180C18161E7D00B3D443 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		368781A8182C54F90093108E /* Bunney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bunney.png; path = coloringBookPages/Bunney.png; sourceTree = "<group>"; };
+		36B8FC641832CC5B00DA9A5D /* clearall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearall.png; sourceTree = "<group>"; };
+		36B8FC661832CC6500DA9A5D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		36D0C5F0181B0D4900AE12DB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		36D0C5F1181B0D4900AE12DB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		36DCA2B11819CAF700BDED69 /* _black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _black.png; sourceTree = "<group>"; };
@@ -137,6 +149,11 @@
 		360104641819B34C001C38DE /* gui */ = {
 			isa = PBXGroup;
 			children = (
+				365379F81832FE3B00F8FD92 /* paletteBacking.png */,
+				365379F91832FE3B00F8FD92 /* settingsBacking.png */,
+				365379F61832EAF000F8FD92 /* Shareing.png */,
+				36B8FC661832CC6500DA9A5D /* settings.png */,
+				36B8FC641832CC5B00DA9A5D /* clearall.png */,
 				36DCA2D51819D77400BDED69 /* Eraser copy.png */,
 				36DCA2B11819CAF700BDED69 /* _black.png */,
 				36DCA2B21819CAF700BDED69 /* _blue.png */,
@@ -215,6 +232,7 @@
 		366717F618161E7D00B3D443 /* ColoringBook */ = {
 			isa = PBXGroup;
 			children = (
+				368781A5182C53D30093108E /* coloringBookPages */,
 				363D8DD11829A02E00DE047C /* sfx */,
 				360104641819B34C001C38DE /* gui */,
 				366717FF18161E7D00B3D443 /* AppDelegate.h */,
@@ -223,10 +241,10 @@
 				3667180B18161E7D00B3D443 /* ViewController.h */,
 				3667180C18161E7D00B3D443 /* ViewController.m */,
 				3663902D181725A2002CECCA /* drawingDefaults.h */,
-				366717F718161E7D00B3D443 /* Supporting Files */,
 				36D0C5F0181B0D4900AE12DB /* SettingsViewController.h */,
 				36D0C5F1181B0D4900AE12DB /* SettingsViewController.m */,
 				363D8DF51829AF4D00DE047C /* soundEffects.h */,
+				366717F718161E7D00B3D443 /* Supporting Files */,
 			);
 			path = ColoringBook;
 			sourceTree = "<group>";
@@ -243,6 +261,14 @@
 				3667180618161E7D00B3D443 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		368781A5182C53D30093108E /* coloringBookPages */ = {
+			isa = PBXGroup;
+			children = (
+				368781A8182C54F90093108E /* Bunney.png */,
+			);
+			name = coloringBookPages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,11 +324,13 @@
 			files = (
 				36DCA2C11819CAF700BDED69 /* _black.png in Resources */,
 				363D8DE71829A2B000DE047C /* Light Blue.wav in Resources */,
+				368781A9182C54F90093108E /* Bunney.png in Resources */,
 				363D8DEC1829A2B000DE047C /* Purple.wav in Resources */,
 				363D8DEA1829A2B000DE047C /* Orange.wav in Resources */,
 				363D8DE51829A2B000DE047C /* Green.wav in Resources */,
 				363D8DE31829A2B000DE047C /* Blue.wav in Resources */,
 				363D8DEE1829A2B000DE047C /* Tan.wav in Resources */,
+				365379FB1832FE3B00F8FD92 /* settingsBacking.png in Resources */,
 				366717FB18161E7D00B3D443 /* InfoPlist.strings in Resources */,
 				36DCA2CB1819CAF700BDED69 /* _purple.png in Resources */,
 				363D8DF11829A2B000DE047C /* Yellow.wav in Resources */,
@@ -311,11 +339,14 @@
 				36DCA2CE1819CAF700BDED69 /* _white.png in Resources */,
 				36DCA2C21819CAF700BDED69 /* _blue.png in Resources */,
 				363D8DE81829A2B000DE047C /* Light Green.wav in Resources */,
+				365379F71832EAF000F8FD92 /* Shareing.png in Resources */,
 				360104681819B34C001C38DE /* page-template.png in Resources */,
 				36DCA2C41819CAF700BDED69 /* _gray.png in Resources */,
+				365379FA1832FE3B00F8FD92 /* paletteBacking.png in Resources */,
 				363D8DF31829AB7700DE047C /* Ambler.wav in Resources */,
 				36DCA2C71819CAF700BDED69 /* _lightgreen.png in Resources */,
 				363D8DF01829A2B000DE047C /* Yellow Green.wav in Resources */,
+				36B8FC651832CC5B00DA9A5D /* clearall.png in Resources */,
 				36DCA2CF1819CAF700BDED69 /* _yellow.png in Resources */,
 				36DCA2C91819CAF700BDED69 /* _orange.png in Resources */,
 				3667180518161E7D00B3D443 /* Default@2x.png in Resources */,
@@ -331,6 +362,7 @@
 				36DCA2C81819CAF700BDED69 /* _maroon.png in Resources */,
 				36DCA2C61819CAF700BDED69 /* _lightblue.png in Resources */,
 				363D8DD31829A03C00DE047C /* Black.wav in Resources */,
+				36B8FC671832CC6500DA9A5D /* settings.png in Resources */,
 				3667180718161E7D00B3D443 /* Default-568h@2x.png in Resources */,
 				36DCA2CA1819CAF700BDED69 /* _pink.png in Resources */,
 				3667180A18161E7D00B3D443 /* MainStoryboard.storyboard in Resources */,

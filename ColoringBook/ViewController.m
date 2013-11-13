@@ -40,7 +40,6 @@ AVAudioPlayer * backgroundMusic;
     
     NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
     resourcePath = [resourcePath stringByAppendingString:bgMusic];
-    NSLog(bgMusic);
     NSError * err;
     backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:resourcePath] error:&err];
     if ( err )
@@ -50,7 +49,7 @@ AVAudioPlayer * backgroundMusic;
     else{
         backgroundMusic.delegate = self;
         backgroundMusic.numberOfLoops = -1;
-        backgroundMusic.volume = 0.1;
+        backgroundMusic.volume = 0.1; //-- make sure that volume is low enough to not cover up the sound effects
         [backgroundMusic play];
     }
     
@@ -73,7 +72,7 @@ AVAudioPlayer * backgroundMusic;
     settingsVC.red = red;
     settingsVC.green = green;
     settingsVC.blue = blue;
-    
+    backgroundMusic.volume = 0.05;
 }
 
 
@@ -85,6 +84,7 @@ AVAudioPlayer * backgroundMusic;
     opacity = ((SettingsViewController*)sender).opacity;
     [self dismissViewControllerAnimated:YES completion:nil];
     stopDrawing= NO; // turn the drawing feature back on, we're done with the settings page!
+    backgroundMusic.volume = 0.1;
 }
 
 
@@ -319,4 +319,64 @@ AVAudioPlayer * backgroundMusic;
     stopDrawing = YES; // when going to the settings View, stop the drawing abilities!
     // that way the user doesn't "draw" on the settings view and have it show up on the main view.
 }
+
+- (IBAction)sharePressed:(id)sender {
+    
+    
+    
+    UIGraphicsBeginImageContext(self.shareLayer.frame.size);
+    [self.shareLayer.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) blendMode:kCGBlendModeNormal alpha:1.0];
+    [self.drawnLayer.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) blendMode:kCGBlendModeNormal alpha:1.0];
+    self.shareLayer.image = UIGraphicsGetImageFromCurrentImageContext();
+    //self.drawnLayer.image = nil; // erase the drawing layer, since the line is now officially "drawn"
+    UIGraphicsEndImageContext();
+    
+    UIGraphicsBeginImageContext(self.shareLayer.frame.size);
+    [self.shareLayer.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) blendMode:kCGBlendModeNormal alpha:1.0];
+    [self.coloringBookPage.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) blendMode:kCGBlendModeNormal alpha:1.0];
+    self.shareLayer.image = UIGraphicsGetImageFromCurrentImageContext();
+    //self.drawingLayer.image = nil; // erase the drawing layer, since the line is now officially "drawn"
+    UIGraphicsEndImageContext();
+    
+    //NSLog(@"Testing, does the code even get here?"); // evidently it does, remove this!
+    
+    NSArray *activityItems;
+    
+    
+    activityItems = @[_postText.text = @"This is a cool app!", _shareLayer.image];
+    
+    
+    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    
+    [self presentViewController:activityController animated:YES completion:NULL];
+}
+
+- (IBAction)clearAllButton:(id)sender {
+    NSString * alertTitle = @"Clear Drawing";
+    NSString * alertText  = @"This will clear your drawing. Are you sure you want to do this?";
+
+    UIAlertView *alert = [[UIAlertView alloc]
+                            initWithTitle: alertTitle
+                            message: alertText
+                            delegate: self
+                            cancelButtonTitle:@"Yes"
+                            otherButtonTitles:@"No",nil];
+    [alert show];
+    
+}
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0)
+    {
+        //NSLog(@"user pressed OK");
+        self.drawnLayer.image = nil; // erase the entire image!
+    }
+    else
+    {
+        //NSLog(@"user pressed Cancel");
+    }
+}
+
+
+
 @end
