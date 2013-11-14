@@ -349,6 +349,7 @@ AVAudioPlayer * backgroundMusic;
     UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
     
     [self presentViewController:activityController animated:YES completion:NULL];
+    self.shareLayer.image = nil;
 }
 
 - (IBAction)clearAllButton:(id)sender {

@@ -86,6 +86,7 @@
 		363D8DE21829A2B000DE047C /* Yellow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Yellow.wav; path = "sounds demo/Yellow.wav"; sourceTree = SOURCE_ROOT; };
 		363D8DF21829AB7700DE047C /* Ambler.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Ambler.wav; path = ../../../../../Downloads/Ambler.wav; sourceTree = "<group>"; };
 		363D8DF51829AF4D00DE047C /* soundEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soundEffects.h; sourceTree = "<group>"; };
+		363FBBB81835801F0045BCE9 /* danila.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = danila.ttf; path = ../../../../../Downloads/danila.ttf; sourceTree = "<group>"; };
 		365379F61832EAF000F8FD92 /* Shareing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shareing.png; sourceTree = "<group>"; };
 		365379F81832FE3B00F8FD92 /* paletteBacking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paletteBacking.png; path = ColoringBook/soundeffects/paletteBacking.png; sourceTree = SOURCE_ROOT; };
 		365379F91832FE3B00F8FD92 /* settingsBacking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsBacking.png; path = ColoringBook/soundeffects/settingsBacking.png; sourceTree = SOURCE_ROOT; };
@@ -200,6 +201,14 @@
 			name = sfx;
 			sourceTree = "<group>";
 		};
+		363FBBB718357FE80045BCE9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				363FBBB81835801F0045BCE9 /* danila.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		366717E418161E7D00B3D443 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +241,7 @@
 		366717F618161E7D00B3D443 /* ColoringBook */ = {
 			isa = PBXGroup;
 			children = (
+				363FBBB718357FE80045BCE9 /* fonts */,
 				368781A5182C53D30093108E /* coloringBookPages */,
 				363D8DD11829A02E00DE047C /* sfx */,
 				360104641819B34C001C38DE /* gui */,
