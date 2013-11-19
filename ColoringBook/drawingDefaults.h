@@ -34,6 +34,8 @@ CGFloat eraserSize      = 40;                           // default eraser stroke
 CGFloat opacity         = 1.0;                          // default brush opacity
 CGFloat opacityBackup   = 1.0;
 
+//float bgMusicVolume     = 0.2;                          // default music volume
+
 
 
 

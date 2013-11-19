@@ -8,6 +8,10 @@
 
 #import "SettingsViewController.h"
 
+
+// define a MACRO
+#define FONT_ANGELINA(s) [UIFont fontWithName:@"Angelina" size:s]
+
 @interface SettingsViewController ()
 
 
@@ -22,6 +26,7 @@
 @synthesize brush;
 @synthesize opacity;
 @synthesize delegate;
+@synthesize brushLabel;
 
 
 
@@ -38,10 +43,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    //brushLabel.font= FONT_ANGELINA(30);
     
     self.brushControl.value = self.brush;
     self.opacityControl.value = self.opacity;
+    self.bgMusicVolume = self.backgroundMusic.volume;
+    if ( self.backgroundMusic.volume == 0 )
+    {
+        [self.musicOnOffSwitch setOn:NO];
+    }
+    else
+    {
+        [self.musicOnOffSwitch setOn:YES];
+    }
     //NSLog(@"%.3f",self.opacity);
     [self sliderChanged:self.brushControl];
     [self sliderChanged:self.opacityControl];
@@ -97,5 +112,19 @@
         //NSLog(@"Opacity Slider was changed");
     }
     
+}
+
+- (IBAction)musicSwitch:(id)sender {
+    UISwitch * theSwitch = (UISwitch *)sender;
+    if ( theSwitch.on )
+    {
+        NSLog(@"Switch is on");
+        self.backgroundMusic.volume = 0.2;
+    }
+    else
+    {
+        NSLog(@"Switch is off");
+        self.backgroundMusic.volume = 0.0;
+    }
 }
 @end

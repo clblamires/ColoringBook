@@ -10,12 +10,18 @@
 // Testing!
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 #import "SettingsViewController.h"
 
 @interface ViewController : UIViewController <SettingsViewControllerDelegate> {
     IBOutlet UIImageView *imagepost;
+    
+    
+    
 }
+
+
     
 @property (weak, nonatomic) IBOutlet UIImageView *drawnLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *drawingLayer;
@@ -26,6 +32,14 @@
 
 //@property (strong, nonatomic) UIImageView *postImage;
 @property (strong, nonatomic) UILabel *postText;
+
+// not sure if this works or not...
+@property (nonatomic) CGFloat bgMusicVolume;
+@property (nonatomic) NSString * resourcePath;
+
+@property (nonatomic) AVAudioPlayer * backgroundMusic;
+
+
 
 
 - (IBAction)colorPressed:(id)sender;

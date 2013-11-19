@@ -295,52 +295,55 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="mFf-so-mBJ">
+                                <rect key="frame" x="11" y="75" width="472" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-yello.png" translatesAutoresizingMaskIntoConstraints="NO" id="vbW-7t-3NY">
+                                <rect key="frame" x="142" y="312" width="471" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-green.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cii-Wc-gC8">
+                                <rect key="frame" x="373" y="120" width="384" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8kq-6C-yaa">
+                                <rect key="frame" x="341" y="256" width="136" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="brushSizeLabel.png" translatesAutoresizingMaskIntoConstraints="NO" id="54R-0Y-khe">
+                                <rect key="frame" x="40" y="135" width="287" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="opacityLabel.png" translatesAutoresizingMaskIntoConstraints="NO" id="pGZ-as-SJM">
+                                <rect key="frame" x="466" y="135" width="234" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="previewLabel.png" translatesAutoresizingMaskIntoConstraints="NO" id="OFy-Yq-qWT">
+                                <rect key="frame" x="93" y="256" width="246" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="1" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="U7w-kz-Wan">
-                                <rect key="frame" x="18" y="140" width="732" height="34"/>
+                                <rect key="frame" x="18" y="215" width="330" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderChanged:" destination="cM9-yf-SK9" eventType="valueChanged" id="FNN-Fs-I2U"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="35d-Vj-UhH">
-                                <rect key="frame" x="18" y="261" width="732" height="34"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="35d-Vj-UhH">
+                                <rect key="frame" x="421" y="215" width="329" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderChanged:" destination="cM9-yf-SK9" eventType="valueChanged" id="AWI-MT-9Bw"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brush Size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoB-6c-h8n">
-                                <rect key="frame" x="20" y="100" width="207" height="49"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="_black.png" offImage="_gray.png" translatesAutoresizingMaskIntoConstraints="NO" id="W5u-Wc-0Rf">
+                                <rect key="frame" x="284" y="472" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opacity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnl-Je-y92">
-                                <rect key="frame" x="20" y="215" width="207" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEP-An-YTx">
-                                <rect key="frame" x="541" y="100" width="207" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNV-Nu-7ge">
-                                <rect key="frame" x="541" y="215" width="207" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8kq-6C-yaa">
-                                <rect key="frame" x="612" y="314" width="136" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <connections>
+                                    <action selector="musicSwitch:" destination="cM9-yf-SK9" eventType="valueChanged" id="oHt-lt-BsZ"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -352,9 +355,8 @@
                     <connections>
                         <outlet property="brushControl" destination="U7w-kz-Wan" id="b9p-iE-KMq"/>
                         <outlet property="brushPreview" destination="8kq-6C-yaa" id="6hT-xT-cPs"/>
-                        <outlet property="brushValueLabel" destination="pEP-An-YTx" id="bmz-QN-uVv"/>
+                        <outlet property="musicOnOffSwitch" destination="W5u-Wc-0Rf" id="m3i-Lf-z51"/>
                         <outlet property="opacityControl" destination="35d-Vj-UhH" id="Ufp-bC-eYV"/>
-                        <outlet property="opacityValueLabel" destination="XNV-Nu-7ge" id="gKL-Lc-Dg5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ch-bG-yeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -404,9 +406,15 @@
         <image name="_white.png" width="128" height="128"/>
         <image name="_yellow.png" width="128" height="128"/>
         <image name="_yellowgreen.png" width="128" height="128"/>
+        <image name="background-blue.png" width="538" height="341"/>
+        <image name="background-green.png" width="706" height="339"/>
+        <image name="background-yello.png" width="617" height="549"/>
+        <image name="brushSizeLabel.png" width="736" height="172"/>
         <image name="clearall.png" width="128" height="128"/>
+        <image name="opacityLabel.png" width="493" height="218"/>
         <image name="page-template.png" width="1536" height="2048"/>
         <image name="paletteBacking.png" width="100" height="2048"/>
+        <image name="previewLabel.png" width="493" height="218"/>
         <image name="settings.png" width="128" height="128"/>
         <image name="settingsBacking.png" width="300" height="100"/>
     </resources>

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+
 
 @protocol SettingsViewControllerDelegate <NSObject>
 - (void)closeSettings:(id)sender;
@@ -14,6 +16,9 @@
 
 
 @interface SettingsViewController : UIViewController
+{
+    
+}
 
 
 // delegate property
@@ -28,6 +33,8 @@
 @property CGFloat red;
 @property CGFloat green;
 @property CGFloat blue;
+@property AVAudioPlayer * backgroundMusic;
+@property CGFloat bgMusicVolume;
 
 
 // for the sliders, the labels, and the brush previews
@@ -37,10 +44,18 @@
 @property (weak, nonatomic) IBOutlet UILabel *opacityValueLabel;
 @property (weak, nonatomic) IBOutlet UISlider *opacityControl;
 
+@property (weak, nonatomic) IBOutlet UILabel *opacityLabel;
+@property (nonatomic, retain) IBOutlet UILabel * brushLabel;
+
+@property (weak, nonatomic) IBOutlet UISwitch * musicOnOffSwitch;
+
+
+
 
 
 // Actions
 - (IBAction)closeSettings:(id)sender;
 - (IBAction)sliderChanged:(id)sender;
+- (IBAction)musicSwitch:(id)sender;
 
 @end

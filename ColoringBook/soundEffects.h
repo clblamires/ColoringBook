@@ -9,7 +9,7 @@
 #ifndef ColoringBook_soundEffects_h
 #define ColoringBook_soundEffects_h
 
-NSString * bgMusic          = @"/Ambler.wav";
+NSString * bgMusic          = @"/Ambler.mp3";
 NSString * sfxBlue          = @"/Blue.wav";
 NSString * sfxBrown         = @"/Brown.wav";
 NSString * sfxGreen         = @"/Green.wav";

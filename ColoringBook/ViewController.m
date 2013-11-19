@@ -21,7 +21,7 @@
 @implementation ViewController
 
 AVAudioPlayer * player;
-AVAudioPlayer * backgroundMusic;
+//AVAudioPlayer * backgroundMusic;
 
 
 
@@ -38,19 +38,21 @@ AVAudioPlayer * backgroundMusic;
 	// Do any additional setup after loading the view, typically from a nib.
     //play the music here...?
     
-    NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
-    resourcePath = [resourcePath stringByAppendingString:bgMusic];
+    _bgMusicVolume = 0.2;
+    
+    _resourcePath = [[NSBundle mainBundle] resourcePath];
+    _resourcePath = [_resourcePath stringByAppendingString:bgMusic];
     NSError * err;
-    backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:resourcePath] error:&err];
+    _backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:_resourcePath] error:&err];
     if ( err )
     {
         NSLog(@"Music failure");
     }
     else{
-        backgroundMusic.delegate = self;
-        backgroundMusic.numberOfLoops = -1;
-        backgroundMusic.volume = 0.1; //-- make sure that volume is low enough to not cover up the sound effects
-        [backgroundMusic play];
+        _backgroundMusic.delegate = self;
+        _backgroundMusic.numberOfLoops = -1;
+        _backgroundMusic.volume = _bgMusicVolume; //-- make sure that volume is low enough to not cover up the sound effects
+        [_backgroundMusic play];
     }
     
     
@@ -72,7 +74,8 @@ AVAudioPlayer * backgroundMusic;
     settingsVC.red = red;
     settingsVC.green = green;
     settingsVC.blue = blue;
-    backgroundMusic.volume = 0.05;
+    settingsVC.backgroundMusic = _backgroundMusic;
+    //_backgroundMusic.volume = 0.05;
 }
 
 
@@ -82,9 +85,10 @@ AVAudioPlayer * backgroundMusic;
     
     brushSize = ((SettingsViewController*)sender).brush;
     opacity = ((SettingsViewController*)sender).opacity;
+    _backgroundMusic.volume = ((SettingsViewController*)sender).bgMusicVolume;
     [self dismissViewControllerAnimated:YES completion:nil];
     stopDrawing= NO; // turn the drawing feature back on, we're done with the settings page!
-    backgroundMusic.volume = 0.1;
+    //_backgroundMusic.volume = 0.1;
 }
 
 
