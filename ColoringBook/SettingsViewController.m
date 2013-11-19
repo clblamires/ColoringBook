@@ -114,17 +114,26 @@
     
 }
 
+// When the switch is "switched", change the volume of the music.
+// If the switch is set to OFF, turn the volume down to zero
+// If the switch is set to ON, then turn the volume back up to 0.2 (20%)
+// volume is this low because we don't want to drown out the volume of the color sounds
 - (IBAction)musicSwitch:(id)sender {
+    // get the switch's information from the sender
     UISwitch * theSwitch = (UISwitch *)sender;
+    
+    // test to see if the switch is on or off
     if ( theSwitch.on )
     {
-        NSLog(@"Switch is on");
+        //NSLog(@"Switch is on");
         self.backgroundMusic.volume = 0.2;
+        self.bgMusicVolume = 0.2;
     }
     else
     {
-        NSLog(@"Switch is off");
+        //NSLog(@"Switch is off");
         self.backgroundMusic.volume = 0.0;
+        self.bgMusicVolume = 0.0;
     }
 }
 @end

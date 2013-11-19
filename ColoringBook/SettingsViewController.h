@@ -36,6 +36,8 @@
 @property AVAudioPlayer * backgroundMusic;
 @property CGFloat bgMusicVolume;
 
+@property UIImageView * coloringBookPage;
+
 
 // for the sliders, the labels, and the brush previews
 @property (weak, nonatomic) IBOutlet UISlider *brushControl;

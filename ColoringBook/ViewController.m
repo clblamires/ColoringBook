@@ -75,6 +75,7 @@ AVAudioPlayer * player;
     settingsVC.green = green;
     settingsVC.blue = blue;
     settingsVC.backgroundMusic = _backgroundMusic;
+    settingsVC.coloringBookPage = _coloringBookPage;
     //_backgroundMusic.volume = 0.05;
 }
 
@@ -85,7 +86,9 @@ AVAudioPlayer * player;
     
     brushSize = ((SettingsViewController*)sender).brush;
     opacity = ((SettingsViewController*)sender).opacity;
+    NSLog( @"%f",  ((SettingsViewController*)sender).bgMusicVolume      );
     _backgroundMusic.volume = ((SettingsViewController*)sender).bgMusicVolume;
+    NSLog(@"Volume is %f" , _backgroundMusic.volume );
     [self dismissViewControllerAnimated:YES completion:nil];
     stopDrawing= NO; // turn the drawing feature back on, we're done with the settings page!
     //_backgroundMusic.volume = 0.1;

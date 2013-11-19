@@ -26,7 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *drawnLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *drawingLayer;
 @property (weak, nonatomic) IBOutlet UIImageView *shareLayer;
-@property (weak, nonatomic) IBOutlet UIImageView *coloringBookPage;
+@property (weak, nonatomic) IBOutlet UIImageView *coloringBookPage; //-- this is the image that the user is coloring on (or around)
 
 
 
@@ -36,6 +36,7 @@
 // not sure if this works or not...
 @property (nonatomic) CGFloat bgMusicVolume;
 @property (nonatomic) NSString * resourcePath;
+
 
 @property (nonatomic) AVAudioPlayer * backgroundMusic;
 
