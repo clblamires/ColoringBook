@@ -357,6 +357,7 @@ AVAudioPlayer * player;
     
     [self presentViewController:activityController animated:YES completion:NULL];
     self.shareLayer.image = nil;
+    NSLog(@"Image is finished being sent");
 }
 
 - (IBAction)clearAllButton:(id)sender {

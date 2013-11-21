@@ -87,6 +87,7 @@
 		36DCA2CF1819CAF700BDED69 /* _yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DCA2BF1819CAF700BDED69 /* _yellow.png */; };
 		36DCA2D01819CAF700BDED69 /* _yellowgreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DCA2C01819CAF700BDED69 /* _yellowgreen.png */; };
 		36DCA2D61819D77400BDED69 /* Eraser copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DCA2D51819D77400BDED69 /* Eraser copy.png */; };
+		36E29C68183C32E80023791B /* blankPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 36E29C67183C32E80023791B /* blankPage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -179,6 +180,7 @@
 		36DCA2BF1819CAF700BDED69 /* _yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _yellow.png; sourceTree = "<group>"; };
 		36DCA2C01819CAF700BDED69 /* _yellowgreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _yellowgreen.png; sourceTree = "<group>"; };
 		36DCA2D51819D77400BDED69 /* Eraser copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eraser copy.png"; sourceTree = "<group>"; };
+		36E29C67183C32E80023791B /* blankPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blankPage.png; path = coloringBookPages/blankPage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,7 @@
 		368781A5182C53D30093108E /* coloringBookPages */ = {
 			isa = PBXGroup;
 			children = (
+				36E29C67183C32E80023791B /* blankPage.png */,
 				36136C5F183C1CDE00655255 /* Bunney.png */,
 				36136C4C183C1BEE00655255 /* bunnyThumb.png */,
 				36136C4D183C1BEE00655255 /* burgerlineart.png */,
@@ -420,6 +423,7 @@
 				366717FB18161E7D00B3D443 /* InfoPlist.strings in Resources */,
 				36DCA2CB1819CAF700BDED69 /* _purple.png in Resources */,
 				36136C42183C18AD00655255 /* clapping.wav in Resources */,
+				36E29C68183C32E80023791B /* blankPage.png in Resources */,
 				363D8DF11829A2B000DE047C /* Yellow.wav in Resources */,
 				3667180318161E7D00B3D443 /* Default.png in Resources */,
 				36136C59183C1BEE00655255 /* pizzalineart.png in Resources */,

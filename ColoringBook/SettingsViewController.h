@@ -59,5 +59,6 @@
 - (IBAction)closeSettings:(id)sender;
 - (IBAction)sliderChanged:(id)sender;
 - (IBAction)musicSwitch:(id)sender;
+- (IBAction)changePage:(id)sender;
 
 @end

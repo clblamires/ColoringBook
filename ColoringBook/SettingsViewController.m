@@ -136,4 +136,13 @@
         self.bgMusicVolume = 0.0;
     }
 }
+
+
+// change the drawing page (this method also closes the settings view)
+- (IBAction)changePage:(id)sender {
+    
+    UIButton * pageSelected = (UIButton *) sender;
+    // now pageSelected contains the information of the page that has been selected.
+    NSLog(@"%@",pageSelected.titleLabel);
+}
 @end
