@@ -352,17 +352,6 @@
                                 <rect key="frame" x="603" y="337" width="127" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3A-T4-oKE" userLabel="bunnyPage">
-                                <rect key="frame" x="14" y="828" width="120" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="bunnyThumb.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="changePage:" destination="cM9-yf-SK9" eventType="touchUpInside" id="2yT-A0-kS7"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9O8-7e-G6U" userLabel="teddyPage">
                                 <rect key="frame" x="138" y="828" width="120" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -370,6 +359,17 @@
                                 <state key="normal" image="teddyBearThumb.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epk-xx-2nR" userLabel="teddyPage">
+                                <rect key="frame" x="14" y="828" width="120" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="bunnyThumb2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changePage:" destination="cM9-yf-SK9" eventType="touchUpInside" id="HXX-Pz-iZa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m70-QA-ucj" userLabel="puppyPage">
                                 <rect key="frame" x="262" y="828" width="120" height="160"/>
@@ -383,7 +383,7 @@
                                 <rect key="frame" x="386" y="828" width="120" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="pizzaThumb.png">
+                                <state key="normal" image="pizzaThumb2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -498,14 +498,14 @@
         <image name="brushPreviewHolder.png" width="300" height="300"/>
         <image name="brushPreviewLabel.png" width="1000" height="218"/>
         <image name="brushSizeLabel.png" width="800" height="218"/>
-        <image name="bunnyThumb.png" width="240" height="320"/>
+        <image name="bunnyThumb2.png" width="240" height="320"/>
         <image name="burgerThumb.png" width="240" height="320"/>
         <image name="clearall.png" width="128" height="128"/>
         <image name="closeSettingsButton.png" width="409" height="198"/>
         <image name="opacityLabel.png" width="520" height="198"/>
         <image name="page-template.png" width="1536" height="2048"/>
         <image name="pagesLabel.png" width="409" height="198"/>
-        <image name="pizzaThumb.png" width="240" height="320"/>
+        <image name="pizzaThumb2.png" width="240" height="320"/>
         <image name="puppyThumb.png" width="240" height="320"/>
         <image name="settings.png" width="128" height="128"/>
         <image name="settingsBacking.png" width="300" height="100"/>
