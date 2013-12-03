@@ -46,7 +46,7 @@ AVAudioPlayer * player;
     _backgroundMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:_resourcePath] error:&err];
     if ( err )
     {
-        NSLog(@"Music failure");
+        NSLog(@"Music player did not load correctly");
     }
     else{
         _backgroundMusic.delegate = self;
@@ -76,7 +76,6 @@ AVAudioPlayer * player;
     settingsVC.blue = blue;
     settingsVC.backgroundMusic = _backgroundMusic;
     settingsVC.coloringBookPage = _coloringBookPage;
-    //_backgroundMusic.volume = 0.05;
 }
 
 
@@ -86,9 +85,9 @@ AVAudioPlayer * player;
     
     brushSize = ((SettingsViewController*)sender).brush;
     opacity = ((SettingsViewController*)sender).opacity;
-    NSLog( @"%f",  ((SettingsViewController*)sender).bgMusicVolume      );
+    //NSLog( @"%f",  ((SettingsViewController*)sender).bgMusicVolume      );
     _backgroundMusic.volume = ((SettingsViewController*)sender).bgMusicVolume;
-    NSLog(@"Volume is %f" , _backgroundMusic.volume );
+    //NSLog(@"Volume is %f" , _backgroundMusic.volume );
     [self dismissViewControllerAnimated:YES completion:nil];
     stopDrawing= NO; // turn the drawing feature back on, we're done with the settings page!
     //_backgroundMusic.volume = 0.1;
@@ -202,9 +201,6 @@ AVAudioPlayer * player;
 
 
 
-/*
-
- */
 
 - (IBAction)colorPressed:(id)sender {
     // get the button pressed, then get its tag, and finally set the color based on the tag
@@ -379,10 +375,6 @@ AVAudioPlayer * player;
     {
         //NSLog(@"user pressed OK");
         self.drawnLayer.image = nil; // erase the entire image!
-    }
-    else
-    {
-        //NSLog(@"user pressed Cancel");
     }
 }
 

@@ -142,7 +142,38 @@
 - (IBAction)changePage:(id)sender {
     
     UIButton * pageSelected = (UIButton *) sender;
-    // now pageSelected contains the information of the page that has been selected.
-    NSLog(@"%@",pageSelected.titleLabel);
+    if ( pageSelected.tag  == 0 )
+    {
+        UIImage * img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"Bunney" ofType:@"png"]];
+        [self.coloringBookPage setImage:img];
+    }
+    else if ( pageSelected.tag == 1 )
+    {
+        UIImage * img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"teddybearlineart" ofType:@"png"]];
+        [self.coloringBookPage setImage:img];
+    }
+    // puppy pizza burger nil
+    else if ( pageSelected.tag == 2 )
+    {
+        UIImage * img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"puppy" ofType:@"png"]];
+        [self.coloringBookPage setImage:img];
+    }
+    else if ( pageSelected.tag == 3 )
+    {
+        UIImage * img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"pizzalineart" ofType:@"png"]];
+        [self.coloringBookPage setImage:img];
+    }
+    else if ( pageSelected.tag == 4 )
+    {
+        UIImage * img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"burgerlineart" ofType:@"png"]];
+        [self.coloringBookPage setImage:img];
+
+    }
+    else if ( pageSelected.tag == 5 )
+    {
+        self.coloringBookPage.image = nil;
+    }
+    // and now close the screen!
+    [self closeSettings:0];
 }
 @end

@@ -14,8 +14,8 @@
 		3601213D18359523006C497D /* background-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3601213A18359523006C497D /* background-blue.png */; };
 		3601213E18359523006C497D /* background-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 3601213B18359523006C497D /* background-green.png */; };
 		3601213F18359523006C497D /* background-yello.png in Resources */ = {isa = PBXBuildFile; fileRef = 3601213C18359523006C497D /* background-yello.png */; };
-		3612EC25183EC6A800A3CB71 /* bunnyThumb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3612EC24183EC6A800A3CB71 /* bunnyThumb2.png */; };
-		3612EC27183EC6B500A3CB71 /* pizzaThumb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3612EC26183EC6B500A3CB71 /* pizzaThumb2.png */; };
+		3612EC32183ECB1C00A3CB71 /* thumbBunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 3612EC30183ECB1C00A3CB71 /* thumbBunny.png */; };
+		3612EC33183ECB1C00A3CB71 /* thumbPizza.png in Resources */ = {isa = PBXBuildFile; fileRef = 3612EC31183ECB1C00A3CB71 /* thumbPizza.png */; };
 		36136C3F183C18A200655255 /* soundoff.png in Resources */ = {isa = PBXBuildFile; fileRef = 36136C3D183C18A200655255 /* soundoff.png */; };
 		36136C40183C18A200655255 /* soundon.png in Resources */ = {isa = PBXBuildFile; fileRef = 36136C3E183C18A200655255 /* soundon.png */; };
 		36136C42183C18AD00655255 /* clapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = 36136C41183C18AD00655255 /* clapping.wav */; };
@@ -98,8 +98,8 @@
 		3601213A18359523006C497D /* background-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-blue.png"; sourceTree = "<group>"; };
 		3601213B18359523006C497D /* background-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-green.png"; sourceTree = "<group>"; };
 		3601213C18359523006C497D /* background-yello.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-yello.png"; sourceTree = "<group>"; };
-		3612EC24183EC6A800A3CB71 /* bunnyThumb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bunnyThumb2.png; path = ColoringBook/coloringBookPages/bunnyThumb2.png; sourceTree = "<group>"; };
-		3612EC26183EC6B500A3CB71 /* pizzaThumb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pizzaThumb2.png; path = ColoringBook/coloringBookPages/pizzaThumb2.png; sourceTree = "<group>"; };
+		3612EC30183ECB1C00A3CB71 /* thumbBunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbBunny.png; path = coloringBookPages/thumbBunny.png; sourceTree = "<group>"; };
+		3612EC31183ECB1C00A3CB71 /* thumbPizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbPizza.png; path = coloringBookPages/thumbPizza.png; sourceTree = "<group>"; };
 		36136C3D183C18A200655255 /* soundoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soundoff.png; sourceTree = "<group>"; };
 		36136C3E183C18A200655255 /* soundon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soundon.png; sourceTree = "<group>"; };
 		36136C41183C18AD00655255 /* clapping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clapping.wav; path = soundeffects/clapping.wav; sourceTree = "<group>"; };
@@ -272,8 +272,6 @@
 		366717E418161E7D00B3D443 = {
 			isa = PBXGroup;
 			children = (
-				3612EC26183EC6B500A3CB71 /* pizzaThumb2.png */,
-				3612EC24183EC6A800A3CB71 /* bunnyThumb2.png */,
 				363FBBBA183586FD0045BCE9 /* angelina.TTF */,
 				366717F618161E7D00B3D443 /* ColoringBook */,
 				366717EF18161E7D00B3D443 /* Frameworks */,
@@ -341,6 +339,8 @@
 				36E29C67183C32E80023791B /* blankPage.png */,
 				36136C5F183C1CDE00655255 /* Bunney.png */,
 				36136C4D183C1BEE00655255 /* burgerlineart.png */,
+				3612EC30183ECB1C00A3CB71 /* thumbBunny.png */,
+				3612EC31183ECB1C00A3CB71 /* thumbPizza.png */,
 				36136C4E183C1BEE00655255 /* burgerThumb.png */,
 				36136C4F183C1BEE00655255 /* pizzalineart.png */,
 				36136C51183C1BEE00655255 /* puppy.png */,
@@ -402,12 +402,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3612EC27183EC6B500A3CB71 /* pizzaThumb2.png in Resources */,
-				3612EC25183EC6A800A3CB71 /* bunnyThumb2.png in Resources */,
 				3601213918359415006C497D /* previewLabel.png in Resources */,
 				36136C5B183C1BEE00655255 /* puppy.png in Resources */,
 				36DCA2C11819CAF700BDED69 /* _black.png in Resources */,
 				363D8DE71829A2B000DE047C /* Light Blue.wav in Resources */,
+				3612EC32183ECB1C00A3CB71 /* thumbBunny.png in Resources */,
 				36136C3F183C18A200655255 /* soundoff.png in Resources */,
 				363D8DEC1829A2B000DE047C /* Purple.wav in Resources */,
 				363D8DEA1829A2B000DE047C /* Orange.wav in Resources */,
@@ -454,6 +453,7 @@
 				36384871183BF66900503516 /* closeSettingsButton.png in Resources */,
 				36DCA2CC1819CAF700BDED69 /* _red.png in Resources */,
 				36136C62183C1F3600655255 /* brushPreviewHolder.png in Resources */,
+				3612EC33183ECB1C00A3CB71 /* thumbPizza.png in Resources */,
 				36DCA2CD1819CAF700BDED69 /* _tan.png in Resources */,
 				363D8DEF1829A2B000DE047C /* White.wav in Resources */,
 				363D8DED1829A2B000DE047C /* Red.wav in Resources */,

@@ -35,6 +35,7 @@
 @property CGFloat blue;
 @property AVAudioPlayer * backgroundMusic;
 @property CGFloat bgMusicVolume;
+//@property UIImageView * thePage;
 
 @property UIImageView * coloringBookPage;
 
