@@ -459,6 +459,27 @@
                                     <action selector="changePage:" destination="cM9-yf-SK9" eventType="touchUpInside" id="fKm-Lg-1lx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itp-4z-MGj">
+                                <rect key="frame" x="581" y="675" width="158" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="aboutLabel.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="aboutThisApp:" destination="cM9-yf-SK9" eventType="touchUpInside" id="TRk-V4-lac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6BQ-qD-0xB">
+                                <rect key="frame" x="14" y="507" width="631" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="easterEgg:" destination="cM9-yf-SK9" eventType="touchUpInside" id="YBf-zZ-nbF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -504,6 +525,7 @@
         <image name="_white.png" width="128" height="128"/>
         <image name="_yellow.png" width="128" height="128"/>
         <image name="_yellowgreen.png" width="128" height="128"/>
+        <image name="aboutLabel.png" width="425" height="233"/>
         <image name="background-blue.png" width="538" height="341"/>
         <image name="background-green.png" width="706" height="339"/>
         <image name="background-yello.png" width="617" height="549"/>

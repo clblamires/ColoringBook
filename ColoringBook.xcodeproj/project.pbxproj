@@ -66,6 +66,8 @@
 		3667180718161E7D00B3D443 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3667180618161E7D00B3D443 /* Default-568h@2x.png */; };
 		3667180A18161E7D00B3D443 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3667180818161E7D00B3D443 /* MainStoryboard.storyboard */; };
 		3667180D18161E7D00B3D443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3667180C18161E7D00B3D443 /* ViewController.m */; };
+		367214E9184E94B6003386B2 /* aboutLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 367214E8184E94B6003386B2 /* aboutLabel.png */; };
+		367433D81850FFCC00BFE375 /* Ninjacat.png in Resources */ = {isa = PBXBuildFile; fileRef = 367433D71850FFCC00BFE375 /* Ninjacat.png */; };
 		36B8FC651832CC5B00DA9A5D /* clearall.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B8FC641832CC5B00DA9A5D /* clearall.png */; };
 		36B8FC671832CC6500DA9A5D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B8FC661832CC6500DA9A5D /* settings.png */; };
 		36C6A707183BE883001504E2 /* Ambler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36C6A706183BE883001504E2 /* Ambler.mp3 */; };
@@ -158,6 +160,8 @@
 		3667180918161E7D00B3D443 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3667180B18161E7D00B3D443 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3667180C18161E7D00B3D443 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		367214E8184E94B6003386B2 /* aboutLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutLabel.png; sourceTree = "<group>"; };
+		367433D71850FFCC00BFE375 /* Ninjacat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ninjacat.png; path = coloringBookPages/Ninjacat.png; sourceTree = "<group>"; };
 		36B8FC641832CC5B00DA9A5D /* clearall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearall.png; sourceTree = "<group>"; };
 		36B8FC661832CC6500DA9A5D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		36C6A706183BE883001504E2 /* Ambler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Ambler.mp3; path = "Colorbook sounds/Ambler.mp3"; sourceTree = SOURCE_ROOT; };
@@ -202,6 +206,7 @@
 		360104641819B34C001C38DE /* gui */ = {
 			isa = PBXGroup;
 			children = (
+				367214E8184E94B6003386B2 /* aboutLabel.png */,
 				36136C61183C1F3600655255 /* brushPreviewHolder.png */,
 				36136C3D183C18A200655255 /* soundoff.png */,
 				36136C3E183C18A200655255 /* soundon.png */,
@@ -336,6 +341,7 @@
 		368781A5182C53D30093108E /* coloringBookPages */ = {
 			isa = PBXGroup;
 			children = (
+				367433D71850FFCC00BFE375 /* Ninjacat.png */,
 				36E29C67183C32E80023791B /* blankPage.png */,
 				36136C5F183C1CDE00655255 /* Bunney.png */,
 				36136C4D183C1BEE00655255 /* burgerlineart.png */,
@@ -419,11 +425,13 @@
 				363D8DEE1829A2B000DE047C /* Tan.wav in Resources */,
 				3601213F18359523006C497D /* background-yello.png in Resources */,
 				3601213618358BB4006C497D /* brushSizeLabel.png in Resources */,
+				367433D81850FFCC00BFE375 /* Ninjacat.png in Resources */,
 				36384870183BF66900503516 /* brushSizeLabel.png in Resources */,
 				365379FB1832FE3B00F8FD92 /* settingsBacking.png in Resources */,
 				366717FB18161E7D00B3D443 /* InfoPlist.strings in Resources */,
 				36DCA2CB1819CAF700BDED69 /* _purple.png in Resources */,
 				36136C42183C18AD00655255 /* clapping.wav in Resources */,
+				367214E9184E94B6003386B2 /* aboutLabel.png in Resources */,
 				36E29C68183C32E80023791B /* blankPage.png in Resources */,
 				363D8DF11829A2B000DE047C /* Yellow.wav in Resources */,
 				3667180318161E7D00B3D443 /* Default.png in Resources */,

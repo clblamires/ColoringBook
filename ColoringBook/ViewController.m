@@ -300,8 +300,12 @@ AVAudioPlayer * player;
         NSLog(@"Music failure");
     }
     else{
-        player.delegate = self;
-        [player play];
+        if ( self.backgroundMusic.volume != 0 )
+        {
+            player.delegate = self;
+            [player play];
+        }
+        
     }
     
     

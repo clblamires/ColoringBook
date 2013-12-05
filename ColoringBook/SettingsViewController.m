@@ -176,4 +176,46 @@
     // and now close the screen!
     [self closeSettings:0];
 }
+
+- (IBAction)aboutThisApp:(id)sender {
+    
+    NSString * alertTitle = @"About This App";
+    NSString * alertText  = @"Color Time Drawing App by Katy Phipps and Casey Blamires. Made for CS 360 at LCSC.";
+    
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle: alertTitle
+                          message: alertText
+                          delegate: self
+                          cancelButtonTitle:@"OK!"
+                          otherButtonTitles:nil];
+    [alert show];
+    
+}
+
+- (IBAction)easterEgg:(id)sender {
+    NSLog(@"secret easter egg");
+    
+    _bgMusicVolume = 0.2;
+    
+    _resourcePath = [[NSBundle mainBundle] resourcePath];
+    _resourcePath = [_resourcePath stringByAppendingString:@"/clapping.wav"];
+    NSError * err;
+    _applauseMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:_resourcePath] error:&err];
+    if ( err )
+    {
+        NSLog(@"Music player did not load correctly");
+    }
+    else{
+        _applauseMusic.delegate = self;
+        _applauseMusic.volume = _bgMusicVolume; //-- make sure that volume is low enough to not cover up the sound effects
+        [_applauseMusic play];
+        UIImage * img = [UIImage imageWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"Ninjacat" ofType:@"png"]];
+        [self.coloringBookPage setImage:img];
+        [self closeSettings:0];
+    }
+}
+
+
+
+
 @end

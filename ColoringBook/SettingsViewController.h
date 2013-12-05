@@ -35,9 +35,12 @@
 @property CGFloat blue;
 @property AVAudioPlayer * backgroundMusic;
 @property CGFloat bgMusicVolume;
-//@property UIImageView * thePage;
-
 @property UIImageView * coloringBookPage;
+
+
+// applause for the easter egg
+@property (nonatomic) NSString * resourcePath;
+@property (nonatomic) AVAudioPlayer * applauseMusic;
 
 
 // for the sliders, the labels, and the brush previews
@@ -61,5 +64,8 @@
 - (IBAction)sliderChanged:(id)sender;
 - (IBAction)musicSwitch:(id)sender;
 - (IBAction)changePage:(id)sender;
+- (IBAction)aboutThisApp:(id)sender;
+- (IBAction)easterEgg:(id)sender;
+
 
 @end
