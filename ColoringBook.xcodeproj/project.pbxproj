@@ -68,6 +68,12 @@
 		3667180D18161E7D00B3D443 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3667180C18161E7D00B3D443 /* ViewController.m */; };
 		367214E9184E94B6003386B2 /* aboutLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 367214E8184E94B6003386B2 /* aboutLabel.png */; };
 		367433D81850FFCC00BFE375 /* Ninjacat.png in Resources */ = {isa = PBXBuildFile; fileRef = 367433D71850FFCC00BFE375 /* Ninjacat.png */; };
+		36AF1F5A18513A2D00BE42F7 /* colorbookicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AF1F5818513A2D00BE42F7 /* colorbookicon.png */; };
+		36AF1F5B18513A2D00BE42F7 /* loadingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AF1F5918513A2D00BE42F7 /* loadingImage.png */; };
+		36AF1F5D18513A8100BE42F7 /* loadingImageSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AF1F5C18513A8100BE42F7 /* loadingImageSmall.png */; };
+		36AF1F5F18513BDC00BE42F7 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AF1F5E18513BDC00BE42F7 /* appIcon.png */; };
+		36AF1F6218513C4900BE42F7 /* settingsAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AF1F6018513C4900BE42F7 /* settingsAppIcon.png */; };
+		36AF1F6318513C4900BE42F7 /* spotlightAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 36AF1F6118513C4900BE42F7 /* spotlightAppIcon.png */; };
 		36B8FC651832CC5B00DA9A5D /* clearall.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B8FC641832CC5B00DA9A5D /* clearall.png */; };
 		36B8FC671832CC6500DA9A5D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B8FC661832CC6500DA9A5D /* settings.png */; };
 		36C6A707183BE883001504E2 /* Ambler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 36C6A706183BE883001504E2 /* Ambler.mp3 */; };
@@ -162,6 +168,12 @@
 		3667180C18161E7D00B3D443 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		367214E8184E94B6003386B2 /* aboutLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutLabel.png; sourceTree = "<group>"; };
 		367433D71850FFCC00BFE375 /* Ninjacat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ninjacat.png; path = coloringBookPages/Ninjacat.png; sourceTree = "<group>"; };
+		36AF1F5818513A2D00BE42F7 /* colorbookicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorbookicon.png; sourceTree = "<group>"; };
+		36AF1F5918513A2D00BE42F7 /* loadingImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImage.png; sourceTree = "<group>"; };
+		36AF1F5C18513A8100BE42F7 /* loadingImageSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImageSmall.png; sourceTree = "<group>"; };
+		36AF1F5E18513BDC00BE42F7 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
+		36AF1F6018513C4900BE42F7 /* settingsAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsAppIcon.png; sourceTree = "<group>"; };
+		36AF1F6118513C4900BE42F7 /* spotlightAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlightAppIcon.png; sourceTree = "<group>"; };
 		36B8FC641832CC5B00DA9A5D /* clearall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearall.png; sourceTree = "<group>"; };
 		36B8FC661832CC6500DA9A5D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		36C6A706183BE883001504E2 /* Ambler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Ambler.mp3; path = "Colorbook sounds/Ambler.mp3"; sourceTree = SOURCE_ROOT; };
@@ -206,6 +218,12 @@
 		360104641819B34C001C38DE /* gui */ = {
 			isa = PBXGroup;
 			children = (
+				36AF1F6018513C4900BE42F7 /* settingsAppIcon.png */,
+				36AF1F6118513C4900BE42F7 /* spotlightAppIcon.png */,
+				36AF1F5E18513BDC00BE42F7 /* appIcon.png */,
+				36AF1F5C18513A8100BE42F7 /* loadingImageSmall.png */,
+				36AF1F5818513A2D00BE42F7 /* colorbookicon.png */,
+				36AF1F5918513A2D00BE42F7 /* loadingImage.png */,
 				367214E8184E94B6003386B2 /* aboutLabel.png */,
 				36136C61183C1F3600655255 /* brushPreviewHolder.png */,
 				36136C3D183C18A200655255 /* soundoff.png */,
@@ -414,6 +432,7 @@
 				363D8DE71829A2B000DE047C /* Light Blue.wav in Resources */,
 				3612EC32183ECB1C00A3CB71 /* thumbBunny.png in Resources */,
 				36136C3F183C18A200655255 /* soundoff.png in Resources */,
+				36AF1F6218513C4900BE42F7 /* settingsAppIcon.png in Resources */,
 				363D8DEC1829A2B000DE047C /* Purple.wav in Resources */,
 				363D8DEA1829A2B000DE047C /* Orange.wav in Resources */,
 				363D8DE51829A2B000DE047C /* Green.wav in Resources */,
@@ -431,6 +450,7 @@
 				366717FB18161E7D00B3D443 /* InfoPlist.strings in Resources */,
 				36DCA2CB1819CAF700BDED69 /* _purple.png in Resources */,
 				36136C42183C18AD00655255 /* clapping.wav in Resources */,
+				36AF1F5A18513A2D00BE42F7 /* colorbookicon.png in Resources */,
 				367214E9184E94B6003386B2 /* aboutLabel.png in Resources */,
 				36E29C68183C32E80023791B /* blankPage.png in Resources */,
 				363D8DF11829A2B000DE047C /* Yellow.wav in Resources */,
@@ -444,6 +464,7 @@
 				363D8DE81829A2B000DE047C /* Light Green.wav in Resources */,
 				36136C5C183C1BEE00655255 /* puppyThumb.png in Resources */,
 				365379F71832EAF000F8FD92 /* Shareing.png in Resources */,
+				36AF1F5D18513A8100BE42F7 /* loadingImageSmall.png in Resources */,
 				360104681819B34C001C38DE /* page-template.png in Resources */,
 				36DCA2C41819CAF700BDED69 /* _gray.png in Resources */,
 				365379FA1832FE3B00F8FD92 /* paletteBacking.png in Resources */,
@@ -456,6 +477,7 @@
 				3667180518161E7D00B3D443 /* Default@2x.png in Resources */,
 				363D8DE61829A2B000DE047C /* Grey.wav in Resources */,
 				363D8DEB1829A2B000DE047C /* Pink.wav in Resources */,
+				36AF1F5F18513BDC00BE42F7 /* appIcon.png in Resources */,
 				36384873183BF66900503516 /* pagesLabel.png in Resources */,
 				36DCA2D01819CAF700BDED69 /* _yellowgreen.png in Resources */,
 				36384871183BF66900503516 /* closeSettingsButton.png in Resources */,
@@ -475,6 +497,7 @@
 				36C6A707183BE883001504E2 /* Ambler.mp3 in Resources */,
 				36136C60183C1CDE00655255 /* Bunney.png in Resources */,
 				363D8DD31829A03C00DE047C /* Black.wav in Resources */,
+				36AF1F5B18513A2D00BE42F7 /* loadingImage.png in Resources */,
 				36B8FC671832CC6500DA9A5D /* settings.png in Resources */,
 				3667180718161E7D00B3D443 /* Default-568h@2x.png in Resources */,
 				36DCA2CA1819CAF700BDED69 /* _pink.png in Resources */,
@@ -482,6 +505,7 @@
 				3667180A18161E7D00B3D443 /* MainStoryboard.storyboard in Resources */,
 				36DCA2D61819D77400BDED69 /* Eraser copy.png in Resources */,
 				36DCA2C51819CAF700BDED69 /* _green.png in Resources */,
+				36AF1F6318513C4900BE42F7 /* spotlightAppIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

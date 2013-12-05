@@ -123,7 +123,8 @@ AVAudioPlayer * player;
         mouseSwiped = YES; // because we're moving now!
         UITouch * touch = [touches anyObject];
         CGPoint currentPoint = [touch locationInView:self.view];
-        UIGraphicsBeginImageContext(self.view.frame.size);
+        //UIGraphicsBeginImageContext(self.view.frame.size);
+        UIGraphicsBeginImageContextWithOptions(self.view.frame.size, NO, 0.5);
         [self.drawingLayer.image drawInRect:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         CGContextMoveToPoint(UIGraphicsGetCurrentContext(), lastPoint.x, lastPoint.y);
         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), currentPoint.x, currentPoint.y);
