@@ -52,6 +52,7 @@
 		363D8DEF1829A2B000DE047C /* White.wav in Resources */ = {isa = PBXBuildFile; fileRef = 363D8DE01829A2B000DE047C /* White.wav */; };
 		363D8DF01829A2B000DE047C /* Yellow Green.wav in Resources */ = {isa = PBXBuildFile; fileRef = 363D8DE11829A2B000DE047C /* Yellow Green.wav */; };
 		363D8DF11829A2B000DE047C /* Yellow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 363D8DE21829A2B000DE047C /* Yellow.wav */; };
+		36438EE11857ABE200FFD055 /* iPhoneStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36438EE01857ABE200FFD055 /* iPhoneStoryboard.storyboard */; };
 		365379F71832EAF000F8FD92 /* Shareing.png in Resources */ = {isa = PBXBuildFile; fileRef = 365379F61832EAF000F8FD92 /* Shareing.png */; };
 		365379FA1832FE3B00F8FD92 /* paletteBacking.png in Resources */ = {isa = PBXBuildFile; fileRef = 365379F81832FE3B00F8FD92 /* paletteBacking.png */; };
 		365379FB1832FE3B00F8FD92 /* settingsBacking.png in Resources */ = {isa = PBXBuildFile; fileRef = 365379F91832FE3B00F8FD92 /* settingsBacking.png */; };
@@ -146,6 +147,7 @@
 		363D8DE21829A2B000DE047C /* Yellow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Yellow.wav; path = "sounds demo/Yellow.wav"; sourceTree = SOURCE_ROOT; };
 		363D8DF51829AF4D00DE047C /* soundEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soundEffects.h; sourceTree = "<group>"; };
 		363FBBBA183586FD0045BCE9 /* angelina.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = angelina.TTF; path = ../../../../Library/Fonts/angelina.TTF; sourceTree = "<group>"; };
+		36438EE01857ABE200FFD055 /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = ../iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 		365379F61832EAF000F8FD92 /* Shareing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shareing.png; sourceTree = "<group>"; };
 		365379F81832FE3B00F8FD92 /* paletteBacking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paletteBacking.png; path = ColoringBook/soundeffects/paletteBacking.png; sourceTree = SOURCE_ROOT; };
 		365379F91832FE3B00F8FD92 /* settingsBacking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsBacking.png; path = ColoringBook/soundeffects/settingsBacking.png; sourceTree = SOURCE_ROOT; };
@@ -330,6 +332,7 @@
 				360104641819B34C001C38DE /* gui */,
 				366717FF18161E7D00B3D443 /* AppDelegate.h */,
 				3667180018161E7D00B3D443 /* AppDelegate.m */,
+				36438EE01857ABE200FFD055 /* iPhoneStoryboard.storyboard */,
 				3667180818161E7D00B3D443 /* MainStoryboard.storyboard */,
 				3667180B18161E7D00B3D443 /* ViewController.h */,
 				3667180C18161E7D00B3D443 /* ViewController.m */,
@@ -491,6 +494,7 @@
 				36136C5D183C1BEE00655255 /* teddybearlineart.png in Resources */,
 				36136C57183C1BEE00655255 /* burgerlineart.png in Resources */,
 				363D8DE91829A2B000DE047C /* Maroon.wav in Resources */,
+				36438EE11857ABE200FFD055 /* iPhoneStoryboard.storyboard in Resources */,
 				3601213D18359523006C497D /* background-blue.png in Resources */,
 				36DCA2C81819CAF700BDED69 /* _maroon.png in Resources */,
 				36DCA2C61819CAF700BDED69 /* _lightblue.png in Resources */,
@@ -610,6 +614,7 @@
 				GCC_PREFIX_HEADER = "ColoringBook/ColoringBook-Prefix.pch";
 				INFOPLIST_FILE = "ColoringBook/ColoringBook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -621,6 +626,7 @@
 				GCC_PREFIX_HEADER = "ColoringBook/ColoringBook-Prefix.pch";
 				INFOPLIST_FILE = "ColoringBook/ColoringBook-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

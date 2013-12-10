@@ -56,6 +56,18 @@ AVAudioPlayer * player;
     }
     
     
+    
+    // check for iPad vs iPhone
+    if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPhone)
+    {
+        brushSize = 10;
+    }
+    else
+    {
+        //[ipad]
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
