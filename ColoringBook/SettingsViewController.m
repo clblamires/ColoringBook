@@ -76,6 +76,9 @@
 
 
 - (IBAction)sliderChanged:(id)sender {
+    
+    
+    
     UISlider * changedSlider = (UISlider*)sender;
     
     if(changedSlider == self.brushControl) {
@@ -108,11 +111,13 @@
         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(),45, 45);
         CGContextStrokePath(UIGraphicsGetCurrentContext());
         self.brushPreview.image = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
+            UIGraphicsEndImageContext();
         //NSLog(@"Opacity Slider was changed");
-    }
+        }
+    
     
 }
+
 
 // When the switch is "switched", change the volume of the music.
 // If the switch is set to OFF, turn the volume down to zero
