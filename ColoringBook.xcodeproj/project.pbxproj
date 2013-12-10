@@ -28,6 +28,8 @@
 		36136C5E183C1BEE00655255 /* teddyBearThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 36136C54183C1BEE00655255 /* teddyBearThumb.png */; };
 		36136C60183C1CDE00655255 /* Bunney.png in Resources */ = {isa = PBXBuildFile; fileRef = 36136C5F183C1CDE00655255 /* Bunney.png */; };
 		36136C62183C1F3600655255 /* brushPreviewHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 36136C61183C1F3600655255 /* brushPreviewHolder.png */; };
+		362584391857DF2A000BF149 /* appIconiPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 362584381857DF2A000BF149 /* appIconiPhone.png */; };
+		3625843B1857E0EB000BF149 /* loadingImageiPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3625843A1857E0EB000BF149 /* loadingImageiPhone.png */; };
 		3638486E183BF66900503516 /* backgroundMusicLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 36384868183BF66900503516 /* backgroundMusicLabel.png */; };
 		3638486F183BF66900503516 /* brushPreviewLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 36384869183BF66900503516 /* brushPreviewLabel.png */; };
 		36384870183BF66900503516 /* brushSizeLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 3638486A183BF66900503516 /* brushSizeLabel.png */; };
@@ -121,6 +123,8 @@
 		36136C54183C1BEE00655255 /* teddyBearThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teddyBearThumb.png; path = coloringBookPages/teddyBearThumb.png; sourceTree = "<group>"; };
 		36136C5F183C1CDE00655255 /* Bunney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bunney.png; path = coloringBookPages/Bunney.png; sourceTree = "<group>"; };
 		36136C61183C1F3600655255 /* brushPreviewHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushPreviewHolder.png; sourceTree = "<group>"; };
+		362584381857DF2A000BF149 /* appIconiPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconiPhone.png; sourceTree = "<group>"; };
+		3625843A1857E0EB000BF149 /* loadingImageiPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loadingImageiPhone.png; sourceTree = "<group>"; };
 		36384868183BF66900503516 /* backgroundMusicLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundMusicLabel.png; sourceTree = "<group>"; };
 		36384869183BF66900503516 /* brushPreviewLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushPreviewLabel.png; sourceTree = "<group>"; };
 		3638486A183BF66900503516 /* brushSizeLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brushSizeLabel.png; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 		360104641819B34C001C38DE /* gui */ = {
 			isa = PBXGroup;
 			children = (
+				3625843A1857E0EB000BF149 /* loadingImageiPhone.png */,
+				362584381857DF2A000BF149 /* appIconiPhone.png */,
 				36AF1F6018513C4900BE42F7 /* settingsAppIcon.png */,
 				36AF1F6118513C4900BE42F7 /* spotlightAppIcon.png */,
 				36AF1F5E18513BDC00BE42F7 /* appIcon.png */,
@@ -429,11 +435,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3625843B1857E0EB000BF149 /* loadingImageiPhone.png in Resources */,
 				3601213918359415006C497D /* previewLabel.png in Resources */,
 				36136C5B183C1BEE00655255 /* puppy.png in Resources */,
 				36DCA2C11819CAF700BDED69 /* _black.png in Resources */,
 				363D8DE71829A2B000DE047C /* Light Blue.wav in Resources */,
 				3612EC32183ECB1C00A3CB71 /* thumbBunny.png in Resources */,
+				362584391857DF2A000BF149 /* appIconiPhone.png in Resources */,
 				36136C3F183C18A200655255 /* soundoff.png in Resources */,
 				36AF1F6218513C4900BE42F7 /* settingsAppIcon.png in Resources */,
 				363D8DEC1829A2B000DE047C /* Purple.wav in Resources */,
