@@ -2,9 +2,15 @@
 //  drawingDefaults.h
 //  ColoringBook
 //
-//  Created by Casey Blamires on 10/22/13.
+//  Created by Casey Blamires and Katy Phipps on 10/22/13.
 //  Copyright (c) 2013 LCSC-CS360. All rights reserved.
 //
+
+
+/*
+ Drawing defaults is a file that contains all of the "default" values for the drawing program
+ THis includes the default color, brush size, and opacity
+ */
 
 #ifndef ColoringBook_drawingDefaults_h
 #define ColoringBook_drawingDefaults_h
@@ -33,13 +39,6 @@ CGFloat brushSize       = 25;                           // default brush stroke
 CGFloat eraserSize      = 40;                           // default eraser stroke
 CGFloat opacity         = 1.0;                          // default brush opacity
 CGFloat opacityBackup   = 1.0;
-
-
-
-//float bgMusicVolume     = 0.2;                          // default music volume
-
-
-
 
 
 

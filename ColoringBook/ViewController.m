@@ -2,41 +2,57 @@
 //  ViewController.m
 //  ColoringBook
 //
-//  Created by Casey Blamires on 10/21/13.
+//  Created by Casey Blamires and Katy Phipps on 10/21/13.
 //  Copyright (c) 2013 LCSC-CS360. All rights reserved.
 //
 
+
+/*
+ View Controller is the brains for the main vew on the storybvoards. When the user taps any of the buttons, this
+ file controls what happens!
+ 
+ User can draw on the storyboard, tap color buttons, etc.
+ */
+
+
+
+// necessary imports
 #import "ViewController.h"
 #import "drawingDefaults.h"
-#import "SettingsViewController.h"
+#import "SettingsViewController.h" // we need the settingsviewcontroller because of the segue between view controllers
 #import "soundEffects.h"
 #import <AVFoundation/AVFoundation.h>
 
 
 
 @interface ViewController ()
-
 @end
+
+
+
+
 
 @implementation ViewController
 
-AVAudioPlayer * player;
-//AVAudioPlayer * backgroundMusic;
+AVAudioPlayer * player; // music player for the background music
 
 
 
 
-/*
- "Ambler" Kevin MacLeod (incompetech.com)
- Licensed under Creative Commons: By Attribution 3.0
- http://creativecommons.org/licenses/by/3.0/
- */
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     //play the music here...?
+    
+    
+    /*
+     "Ambler" Kevin MacLeod (incompetech.com)
+     Licensed under Creative Commons: By Attribution 3.0
+     http://creativecommons.org/licenses/by/3.0/
+     */
     
     _bgMusicVolume = 0.2;
     
@@ -60,11 +76,7 @@ AVAudioPlayer * player;
     // check for iPad vs iPhone
     if([[UIDevice currentDevice]userInterfaceIdiom]==UIUserInterfaceIdiomPhone)
     {
-        brushSize = 10;
-    }
-    else
-    {
-        //[ipad]
+        brushSize = 10; //basically, if we're on an iPhone, we don't need such a huge brush size.
     }
     
     
@@ -77,10 +89,13 @@ AVAudioPlayer * player;
 }
 
 
+// prepareForSegue is called when the user tries to go to the next view controller (in this case, the
+// settings view controller). It initializes a settingsvewcontroller object with the destination view controller
+// and then sets it's properties to the values in this view controller
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     SettingsViewController * settingsVC = (SettingsViewController *)segue.destinationViewController;
-    settingsVC.delegate = self;
+    settingsVC.delegate = self; //-- this one is important so as to properly set the delegate
     settingsVC.brush = brushSize;
     settingsVC.opacity = opacity;
     settingsVC.red = red;
@@ -88,6 +103,7 @@ AVAudioPlayer * player;
     settingsVC.blue = blue;
     settingsVC.backgroundMusic = _backgroundMusic;
     settingsVC.coloringBookPage = _coloringBookPage;
+    
 }
 
 
@@ -97,12 +113,12 @@ AVAudioPlayer * player;
     
     brushSize = ((SettingsViewController*)sender).brush;
     opacity = ((SettingsViewController*)sender).opacity;
-    //NSLog( @"%f",  ((SettingsViewController*)sender).bgMusicVolume      );
+
     _backgroundMusic.volume = ((SettingsViewController*)sender).bgMusicVolume;
-    //NSLog(@"Volume is %f" , _backgroundMusic.volume );
+
     [self dismissViewControllerAnimated:YES completion:nil];
     stopDrawing= NO; // turn the drawing feature back on, we're done with the settings page!
-    //_backgroundMusic.volume = 0.1;
+
 }
 
 

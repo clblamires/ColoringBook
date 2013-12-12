@@ -150,7 +150,6 @@
 		363D8DE11829A2B000DE047C /* Yellow Green.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Yellow Green.wav"; path = "sounds demo/Yellow Green.wav"; sourceTree = SOURCE_ROOT; };
 		363D8DE21829A2B000DE047C /* Yellow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Yellow.wav; path = "sounds demo/Yellow.wav"; sourceTree = SOURCE_ROOT; };
 		363D8DF51829AF4D00DE047C /* soundEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soundEffects.h; sourceTree = "<group>"; };
-		363FBBBA183586FD0045BCE9 /* angelina.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = angelina.TTF; path = ../../../../Library/Fonts/angelina.TTF; sourceTree = "<group>"; };
 		36438EE01857ABE200FFD055 /* iPhoneStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneStoryboard.storyboard; path = ../iPhoneStoryboard.storyboard; sourceTree = "<group>"; };
 		365379F61832EAF000F8FD92 /* Shareing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shareing.png; sourceTree = "<group>"; };
 		365379F81832FE3B00F8FD92 /* paletteBacking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paletteBacking.png; path = ColoringBook/soundeffects/paletteBacking.png; sourceTree = SOURCE_ROOT; };
@@ -303,7 +302,6 @@
 		366717E418161E7D00B3D443 = {
 			isa = PBXGroup;
 			children = (
-				363FBBBA183586FD0045BCE9 /* angelina.TTF */,
 				366717F618161E7D00B3D443 /* ColoringBook */,
 				366717EF18161E7D00B3D443 /* Frameworks */,
 				366717EE18161E7D00B3D443 /* Products */,
@@ -412,6 +410,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "LCSC-CS360";
+				TargetAttributes = {
+					366717EC18161E7D00B3D443 = {
+						DevelopmentTeam = T6XCFUKW5U;
+					};
+				};
 			};
 			buildConfigurationList = 366717E818161E7D00B3D443 /* Build configuration list for PBXProject "ColoringBook" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -618,6 +621,7 @@
 		3667181118161E7D00B3D443 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColoringBook/ColoringBook-Prefix.pch";
 				INFOPLIST_FILE = "ColoringBook/ColoringBook-Info.plist";
@@ -630,6 +634,7 @@
 		3667181218161E7D00B3D443 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColoringBook/ColoringBook-Prefix.pch";
 				INFOPLIST_FILE = "ColoringBook/ColoringBook-Info.plist";
