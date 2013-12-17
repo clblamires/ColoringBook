@@ -109,14 +109,17 @@ AVAudioPlayer * player; // music player for the background music
 
 #pragma mark - SettingsViewControllerDelegate methods
 
+// closeSettings method
+// this closes down the settings view controller
+// it is called when the settings view controller is closed
 - (void)closeSettings:(id)sender {
     
-    brushSize = ((SettingsViewController*)sender).brush;
-    opacity = ((SettingsViewController*)sender).opacity;
+    brushSize = ((SettingsViewController*)sender).brush; // save the brush size
+    opacity = ((SettingsViewController*)sender).opacity; // save the brush opacity
 
-    _backgroundMusic.volume = ((SettingsViewController*)sender).bgMusicVolume;
+    _backgroundMusic.volume = ((SettingsViewController*)sender).bgMusicVolume; // set the background music volume
 
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil]; // dismiss the view controller
     stopDrawing= NO; // turn the drawing feature back on, we're done with the settings page!
 
 }
@@ -230,7 +233,7 @@ AVAudioPlayer * player; // music player for the background music
 
 
 
-
+// colorPressed - what happens when the user pushes a button for the color?
 - (IBAction)colorPressed:(id)sender {
     // get the button pressed, then get its tag, and finally set the color based on the tag
     
@@ -249,7 +252,7 @@ AVAudioPlayer * player; // music player for the background music
     NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
     // each button will have a sound effect for it, as seen below
     
-    UIButton * color = (UIButton *) sender;
+    UIButton * color = (UIButton *) sender; // save the currently pushed button
     
     if (color.tag == 0) {
         setColor(28, 28, 28);
@@ -356,6 +359,10 @@ AVAudioPlayer * player; // music player for the background music
     // that way the user doesn't "draw" on the settings view and have it show up on the main view.
 }
 
+
+
+// called when the share button is pressed
+// this method will save the drawnLayer and the coloringBookPage layer all as one imaveview, then send it
 - (IBAction)sharePressed:(id)sender {
     
     
@@ -374,11 +381,11 @@ AVAudioPlayer * player; // music player for the background music
     //self.drawingLayer.image = nil; // erase the drawing layer, since the line is now officially "drawn"
     UIGraphicsEndImageContext();
     
+    // at this point in the code, the shareLayer contains the drawing and the coloring book page all combined.
+    
     //NSLog(@"Testing, does the code even get here?"); // evidently it does, remove this!
     
     NSArray *activityItems;
-    
-    
     activityItems = @[_postText.text = @"This is a cool app!", _shareLayer.image];
     
     
@@ -389,6 +396,8 @@ AVAudioPlayer * player; // music player for the background music
     NSLog(@"Image is finished being sent");
 }
 
+
+// clearAllButton - clears the page (use an alertview to make sure the user actually wants to do this though)
 - (IBAction)clearAllButton:(id)sender {
     NSString * alertTitle = @"Clear Drawing";
     NSString * alertText  = @"This will clear your drawing. Are you sure you want to do this?";

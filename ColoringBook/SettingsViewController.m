@@ -30,7 +30,7 @@
 @synthesize brush;
 @synthesize opacity;
 @synthesize delegate;
-@synthesize brushLabel;
+//@synthesize brushLabel;
 
 
 
@@ -105,7 +105,7 @@
     if(changedSlider == self.brushControl) {
         
         self.brush = self.brushControl.value;
-        self.brushValueLabel.text = [NSString stringWithFormat:@"Size: %.0f", round(self.brush)];
+        //self.brushValueLabel.text = [NSString stringWithFormat:@"Size: %.0f", round(self.brush)];
         // Note, the above line is no longer even being used.
         
         // start the graphic context to draw the brush preview
@@ -126,7 +126,7 @@
     else if(changedSlider == self.opacityControl) {
         
         self.opacity = self.opacityControl.value;
-        self.opacityValueLabel.text = [NSString stringWithFormat:@"Opacity: %.0f %%", round(self.opacity*100)];
+        //self.opacityValueLabel.text = [NSString stringWithFormat:@"Opacity: %.0f %%", round(self.opacity*100)];
         
         
         UIGraphicsBeginImageContext(self.brushPreview.frame.size);
